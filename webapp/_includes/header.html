@@ -1,0 +1,37 @@
+<header class="bg-blue-400 dark:bg-slate-700 border-b-4 dark:border-gray-500 border-gray-300 p-8">
+    <nav class="flex justify-between items-center w-[92%] mx-auto">
+        <div>
+            <img class="w-48 cursor-pointer p-3" src="src/assets/logo.png" alt="EluciDATA Logo">
+        </div>
+        <div class="nav-links duration-500 md:static absolute bg-blue-400 dark:bg-slate-700 md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+            <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                <li>
+                    <a class="hover:underline text-2xl dark:text-white" href="#">Starter Kits</a>
+                </li>
+                <li>
+                    <a class="hover:underline text-2xl dark:text-white" href="#">Blog</a>
+                </li>
+                <li>
+                    <a class="hover:underline text-2xl dark:text-white" href="#">Community</a>
+                </li>
+                <li>
+                    <a class="hover:underline text-2xl dark:text-white  " href="#">About</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="flex items-center relative">
+            <input class="w-full py-2 px-4 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 md:mr-4" type="search" placeholder="Search">
+            <div class="absolute inset-y-0 right-0 flex items-center pr-3">
+              <button class="items-center justify-center h-8 w-8 rounded-md text-gray-600 hover:text-gray-900 focus:outline-none focus:text-gray-900 focus:bg-gray-100 hidden md:block md:w-10 md:h-10">
+                <ion-icon name="search" class="text-lg leading-none m-0 p-0"></ion-icon>
+              </button>
+            </div>
+            <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-5xl cursor-pointer md:hidden p-3 dark:text-white text-black"></ion-icon>
+          </div>
+        
+        
+        
+        
+    </nav>
+</header>
