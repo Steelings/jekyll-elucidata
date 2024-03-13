@@ -7,13 +7,20 @@
 
     {%- include header.html -%}
 
-    <main class="page-content max-w-screen-lg mx-auto h-full" aria-label="Content">
-      <div class="wrapper mt-5">
-        {{ content }}
-      </div>
-    </main>
+    {%- include main.html -%}
 
     {%- include footer.html -%}
+
+
+    <!-- Hamburger dropdown menu  -->
+    <script>
+        const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e){
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[4%]')
+        }
+    </script>
+
 
   </body> 
 
