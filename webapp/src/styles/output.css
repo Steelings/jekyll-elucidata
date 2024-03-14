@@ -880,6 +880,10 @@ video {
   flex-direction: column;
 }
 
+.content-center {
+  align-content: center;
+}
+
 .items-start {
   align-items: flex-start;
 }
@@ -1629,6 +1633,10 @@ video {
     flex-direction: row;
   }
 
+  .lg\:items-start {
+    align-items: flex-start;
+  }
+
   .lg\:p-12 {
     padding: 3rem;
   }
@@ -1645,6 +1653,10 @@ video {
 
   .lg\:pt-2 {
     padding-top: 0.5rem;
+  }
+
+  .lg\:text-left {
+    text-align: left;
   }
 
   .lg\:text-3xl {
