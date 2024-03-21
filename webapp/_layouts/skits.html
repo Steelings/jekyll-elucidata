@@ -7,7 +7,7 @@
 
     {%- include header.html -%}
 
-    {%- include main.html -%}
+    {%- include skitsmain.html -%}
 
     {%- include footer.html -%}
 
@@ -20,6 +20,26 @@
             navLinks.classList.toggle('top-[4%]')
         }
     </script>
+
+
+    <!-- Swiper for categories  -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: '4',
+      speed: 500,
+      spaceBetween: 100,
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+
+    const buttons = document.querySelectorAll('.swiper-slide.filter-button');
+
+  </script>
+  
 
 
   </body> 
