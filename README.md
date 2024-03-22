@@ -16,6 +16,13 @@
 
 ## :star2: About the Project
 
+### :dart: Features
+- Jekyll
+- Tailwind
+- SEO
+- RSS
+
+
 ## :toolbox: Getting Started
 
 ### :bangbang: Prerequisites
