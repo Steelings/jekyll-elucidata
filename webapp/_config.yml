@@ -27,6 +27,7 @@ url: "ELUCIDATA.com" # the base hostname & protocol for your site, e.g. http://e
 twitter_username: Elucidata
 github_username:  Elucidata
 
+
 # Build settings
 theme: minima
 
