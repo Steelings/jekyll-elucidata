@@ -2,6 +2,11 @@
 layout: post
 title:  "Testing jekyll demo setup"
 date:   2024-02-28 16:17:53 +0100
+image: src/assets/algorithm-selection.png
+author: Berre Staelens
+categories: 
+  - Algorithms
+read_time: 2 min
 ---
 <body class="font-[Poppins] bg-gradient-to-br from-gray-50 via-sky-200 to-blue-300 min-h-screen">
 
