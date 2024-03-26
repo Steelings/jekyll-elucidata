@@ -30,7 +30,7 @@ github_username:  Elucidata
 
 # Build settings
 theme: minima
-
+permalink: /:slug
 postcss:
   plugins:
     - autoprefixer
