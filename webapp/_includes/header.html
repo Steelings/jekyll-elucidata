@@ -50,3 +50,13 @@
         
     </nav>
 </header>
+
+<script>
+    const searchInput = document.querySelector('input[type="search"]');
+
+searchInput.addEventListener('input', (event) => {
+    const searchTerm = event.target.value;
+    const sanitizedTerm = DOMPurify.sanitize(searchTerm);
+    
+});
+</script>
