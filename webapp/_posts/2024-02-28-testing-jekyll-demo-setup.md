@@ -6,9 +6,8 @@ author: John Doe
 read_time: 5 min
 categories:
     - Engineering
-    - Research
-    - Future
 image: src/assets/engineering.jpeg
+description: Example of a commonly used algorithm
 excerpt: "This is a test post to demonstrate adding additional data to a Markdown file for Jekyll."
 ---
 

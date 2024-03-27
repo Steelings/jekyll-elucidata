@@ -41,26 +41,22 @@
                 </a>
             </div>
 
-            <div class="flex flex-col items-center p-4 md:p-10">
-                <a href="blog" class="block">
-                    <div class="text-slate-100 font-bold pb-2">Blog</div>
-                    </a>
-                    <a href="blog/collab" class="block">
-                    <div class="text-sm text-slate-100 text-center">Collaboration</div>
-                    </a>
-                    <a href="blog/paper" class="block">
-                        <div class="text-sm text-slate-100 text-center">Best Industry Paper Award</div>
-                    </a>
-                    <a href="blog/adasseries" class="block">
-                        <div class="text-sm text-slate-100 text-center">Sir Adas' Series</div>
-                    </a>
-                    <a href="blog/economy" class="block">
-                        <div class="text-sm text-slate-100 text-center">Circular Economy</div>
-                    </a>
-                    <a href="blog/interview" class="block">
-                        <div class="text-sm text-slate-100 text-center">Interview 3E</div>
-                    </a>
+            <div class="flex justify-center items-center p-4 md:p-10">
+                <ul class="list-none text-center">
+                    <li class="mb-2">
+                        <a href="blog" class="text-slate-100 hover:underline block">
+                            <div class="font-bold pb-2">Blog</div>
+                        </a>
+                    </li>
+                    {% for post in site.posts limit:5 %}
+                        <li class="mb-2">
+                            <a href="{{ site.baseurl }}{{ post.url }}" class="text-slate-100 hover:underline block">{{ post.title }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
             </div>
+            
+            
 
             <div class="flex flex-col items-center p-4 md:p-10">
                 <div class="text-slate-100 font-bold pb-2">Community</div>
