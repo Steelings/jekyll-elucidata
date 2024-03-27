@@ -37,29 +37,31 @@
 
 
     const buttons = document.querySelectorAll('.swiper-slide.filter-button');
-    document.addEventListener("DOMContentLoaded", function() {
-        const filterButtons = document.querySelectorAll(".filter-button");
-        const skitCards = document.querySelectorAll(".skit-cards > div");
 
-        filterButtons.forEach(button => {
-            button.addEventListener("click", () => {
-                const category = button.dataset.category;
-                filterCards(category);
-            });
-        });
+document.addEventListener("DOMContentLoaded", function() {
+  const filterButtons = document.querySelectorAll(".filter-button");
+  const skitCards = document.querySelectorAll(".skit-cards > div");
 
-        function filterCards(category) {
-            skitCards.forEach(card => {
-                const title = card.querySelector("h2").textContent.toLowerCase();
-                if (category === "all" || title.includes(category)) {
-                    card.style.display = "visible";
-                } else {
-                    card.style.display = "none";
-                }
-            });
-        }
+  filterButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      const category = button.dataset.category;
+      filterCards(category);
     });
+  });
 
+  function filterCards(category) {
+    skitCards.forEach(card => {
+      card.style.display = "visible"; // Reset all cards
+
+      const title = card.querySelector("h2").textContent.toLowerCase();
+      if (category === "all" || title.indexOf(category) !== -1) {
+        card.style.display = "visible";
+      } else {
+        card.style.display = "none"; // Hide if no category match (optional)
+      }
+    });
+  }
+});
   </script>
   
 
