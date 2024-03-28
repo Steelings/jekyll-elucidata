@@ -21,34 +21,28 @@
         <!-- Right Section -->
         <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-center md:text-left mx-4 md:mx-0">
             <div class="flex flex-col items-center p-4 md:p-10">
-                <a href="skits" class="block">
-                <div class="text-slate-100 font-bold pb-2">Starter kits</div>
-                </a>
-                <a href="skits/exploration" class="block">
-                <div class="text-sm text-slate-100 text-center">Data exploration</div>
-                </a>
-                <a href="skits/engineering" class="block">
-                    <div class="text-sm text-slate-100 text-center">Feature Engineering</div>
-                </a>
-                <a href="skits/retention" class="block">
-                    <div class="text-sm text-slate-100 text-center">Intelligent data retention</div>
-                </a>
-                <a href="skits/prediction" class="block">
-                    <div class="text-sm text-slate-100 text-center">Life Prediction</div>
-                </a>
-                <a href="skits/forecasting" class="block">
-                    <div class="text-sm text-slate-100 text-center">Resource Demand Forecasting</div>
-                </a>
+                <ul class="list-none text-center">
+                    <li class="mb-2">
+                        <a href="skits" class="text-slate-100 hover:underline block">
+                            <div class="font-bold pb-2 text-xl">Starter kits</div>
+                        </a>
+                    </li>
+                    {% assign }
+                    <li class="mb-2">
+                        <a href="{{ site.baseurl }}{{ post.url }}" class="text-slate-100 hover:underline block">{{ skit.title }}</a>
+                    </li>
+                </ul>
             </div>
 
             <div class="flex justify-center items-center p-4 md:p-10">
                 <ul class="list-none text-center">
                     <li class="mb-2">
                         <a href="blog" class="text-slate-100 hover:underline block">
-                            <div class="font-bold pb-2">Blog</div>
+                            <div class="font-bold pb-2 text-xl">Blog</div>
                         </a>
                     </li>
-                    {% for post in site.posts limit:5 %}
+                    {% assign blog_posts = site.posts | where: "layout", "post" | sort: 'date' | reverse %}
+                    {% for post in blog_posts limit:5 %}
                         <li class="mb-2">
                             <a href="{{ site.baseurl }}{{ post.url }}" class="text-slate-100 hover:underline block">{{ post.title }}</a>
                         </li>
