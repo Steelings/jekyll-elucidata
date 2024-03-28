@@ -27,7 +27,6 @@ url: "ELUCIDATA.com" # the base hostname & protocol for your site, e.g. http://e
 twitter_username: Elucidata
 github_username:  Elucidata
 
-
 # Build settings
 theme: minima
 permalink: /:slug
@@ -40,6 +39,11 @@ postcss:
         autoprefixer: false
         safe: true
 
+
+collections:
+  skits:
+    output: true
+    permalink: /skit/:title.html
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
