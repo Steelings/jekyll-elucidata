@@ -27,10 +27,12 @@
                             <div class="font-bold pb-2 text-xl">Starter kits</div>
                         </a>
                     </li>
-                    {% assign }
+                    {% assign skits_posts = site.posts | where: "layout", "skits" | sort: 'date' | reverse %}
+                    {% for skit in skits_posts %}
                     <li class="mb-2">
-                        <a href="{{ site.baseurl }}{{ post.url }}" class="text-slate-100 hover:underline block">{{ skit.title }}</a>
+                        <a href="{{ site.baseurl }}{{ skit.url }}" class="text-slate-100 hover:underline block">{{ skit.title }}</a>
                     </li>
+                    {% endfor %}
                 </ul>
             </div>
 
