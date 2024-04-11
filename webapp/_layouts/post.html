@@ -56,6 +56,7 @@ layout: default
         <h2 class="mb-4 font-bold text-3xl text-gray-700">You Might Also Like …</h2>
         <ul class="list-disc pl-4 mb-8">
         {% for post in site.posts limit:5 %}
+        // filter by tag (?)//
         <li class="mb-2">
             <a href="{{ site.baseurl }}{{ post.url }}" class="text-blue-500 hover:underline">{{ post.title }}</a>
         </li>

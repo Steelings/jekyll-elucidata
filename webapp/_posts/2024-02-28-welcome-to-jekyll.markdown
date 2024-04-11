@@ -3,7 +3,6 @@ layout: post
 title:  "Testing jekyll demo setup"
 date:   2024-02-28 16:17:53 +0100
 image: src/assets/algorithm-selection.png
-author: Berre Staelens
 categories: 
   - Algorithms
 read_time: 2 min
