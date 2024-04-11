@@ -81,6 +81,5 @@ npm start
 
 ## :compass: Roadmap
 
-* [ ] Create Community section
 * [ ] Create About section
 * [ ] Starter kit nesting
