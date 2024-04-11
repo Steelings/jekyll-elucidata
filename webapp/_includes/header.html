@@ -1,4 +1,16 @@
-<header class="bg-sky-900 dark:bg-slate-700  dark:border-gray-500 border-gray-300 p-2 shadow-lg w-full">
+<header class="bg-sky-900 dark:bg-slate-700  dark:border-gray-500 border-gray-300 p-2 shadow-lg w-full fixed top-0 transition-transform transform duration-700 ease-in-out header-scroll z-50 mb-auto">
+    <style>
+        .header-scroll {
+            transition-property: transform;
+        }
+
+        .header-scroll.-translate-y-full {
+            transform: translateY(-100%);
+        }
+    </style>
+    
+    
+    
     <nav class="flex justify-between items-center w-[92%] mx-auto">
         <div>
             <a href="/elucidata/" class="block">
@@ -42,8 +54,7 @@
                 <ion-icon name="search" class="text-lg leading-none m-0 p-0"></ion-icon>
               </button>
             </div>
-            <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-5xl cursor-pointer md:hidden p-3 dark:text-white text-black"></ion-icon>
-        </div>
+         </div>
     </nav>
 </header>
 
@@ -58,11 +69,23 @@ searchInput.addEventListener('input', (event) => {
     const currentPage = window.location.pathname;
     const navLinksUnderline = document.querySelectorAll('.nav-links a');
 
-    console.log(currentPage);
     navLinksUnderline.forEach(link => {
         if (link.getAttribute('href') === currentPage) {
             link.querySelector('span').classList.add('scale-x-100');
         }
     })
 
+
+    const header = document.querySelector('.header-scroll');
+     let lastScroll = 0;
+
+    window.addEventListener('scroll', () => {
+        const currentScroll = window.pageYOffset;   
+        if (currentScroll > lastScroll) {
+            header.classList.add('-translate-y-full');
+        } else {
+            header.classList.remove('-translate-y-full');
+        }
+        lastScroll = currentScroll;
+    });
 </script>

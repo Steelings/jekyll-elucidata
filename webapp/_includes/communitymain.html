@@ -1,4 +1,4 @@
-<main>
+<main class="mt-16">
     <section class="header-and-searchbar">
         <div class="flex flex-col md:justify-between">
           <h1 class="text-5xl font-bold text-gray-700 m-4 pt-16 text-center">EluciDATA Community</h1>
@@ -11,7 +11,7 @@
 
     <section class="info-card bg-slate-50 rounded-xl p-4 md:p-8 flex flex-col md:flex-row m-16 shadow-xl">
         <div class="img md:w-2/3">
-          <img src="src/assets/algorithm-selection.png" class="md:rounded-l-xl rounded-xl w-full h-full">
+          <img src="src/assets/community-hero.jpg" class="md:rounded-l-xl rounded-xl w-full h-full" alt="community picture of community page">
         </div>
       
         <div class="text md:w-1/3 p-4 md:p-8">
@@ -31,10 +31,9 @@
     <section class="participation-cards">
         <h1 class="text-5xl font-bold text-gray-700 m-4 pt-16 text-center"><span class="underline">Benefits</span> to participation</h1>
         
-        <div class="bg-sky-900 rounded-xl flex flex-col md:flex-row p-8 m-16 items-center">
+        <div class="bg-slate-700 rounded-xl flex flex-col md:flex-row p-8 m-16 items-center">
           <img src="src/assets/participation.jpg" class="w-full md:w-1/4 h-auto flex rounded-xl" alt="participation image">
 
-          
           <p class="text-xl font-bold text-center md:w-3/4 text-slate-50 mx-auto mt-4 md:mt-0">
             Gain insights in emerging technologies through comprehensible industrial use cases on how to successfully apply AI
             and data science techniques in several sectors
@@ -64,7 +63,7 @@
         </div>
         
 
-        <div class="bg-sky-900 rounded-xl flex flex-col md:flex-row p-8 m-16 items-center shadow-xl">
+        <div class="bg-slate-700 rounded-xl flex flex-col md:flex-row p-8 m-16 items-center shadow-xl">
           <img src="src/assets/network.jpg" class="w-full md:w-1/4 h-auto flex rounded-xl" alt="participation image">
 
           
@@ -77,12 +76,12 @@ Be informed about new R&D proposals and take part in their industrial consortia
 
 
 
-      <section class="become-member">
+      <section class="become-member" id="advantages">
        
         <h1 class="text-5xl font-bold text-gray-700 m-4 pt-16 text-center pb-16">Join the Experience</h1>
    
 
-<div class="w-full max-w-sm bg-white border border-gray-200 rounded-xl shadow sm:p-8 dark:bg-sky-900 dark:border-gray-700 mx-auto p-8">
+<div class="w-full max-w-sm bg-white border border-gray-200 rounded-xl shadow sm:p-8 dark:bg-slate-700 dark:border-gray-700 mx-auto p-8">
   <h5 class="mb-4 text-xl font-medium text-gray-200 dark:text-gray-200">Sirris Member</h5>
   <div class="flex items-baseline text-gray-900 dark:text-white">
   <span class="text-3xl font-semibold">$</span>
@@ -116,34 +115,56 @@ Be informed about new R&D proposals and take part in their industrial consortia
 </div>
 </section>
 
-      <section class="member-form">
-        <h1 class="text-5xl font-bold text-gray-700 m-4 pt-16 text-center pb-8">Member application form</h1>
+<section>
+  <h1 class="text-5xl font-bold text-gray-700 m-4 pt-16 text-center pb-16">Become a member</h1>
+   
+<div class="flex justify-center">
+  <div class="bg-white w-full md:w-[calc(50%-4rem)] max-w-[calc(50%-4rem)] rounded-lg shadow-lg p-8 m-4">
+    <div class="flex">
+      <!-- Member Form Section -->
+      <section class="member-form w-1/2 mr-4">
+        <form>
+          <h3 class="text-lg font-semibold text-gray-700 my-2 pb-4">Company name</h3>
+          <div class="flex">
+            <span class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 border border-e-0 border-gray-300 rounded-s-md dark:bg-slate-700 dark:text-gray-400 dark:border-gray-600">
+              <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm0 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm0 13a8.949 8.949 0 0 1-4.951-1.488A3.987 3.987 0 0 1 9 13h2a3.987 3.987 0 0 1 3.951 3.512A8.949 8.949 0 0 1 10 18Z"/>
+              </svg>
+            </span>
+            <input type="text" id="company-name" class="rounded-none rounded-e-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm p-2.5  dark:bg-slate-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Your company">
+          </div>
 
-        
+          <h3 class="text-lg font-semibold text-gray-700 my-2 pb-4">Your message, motivation</h3>
+          <textarea id="message" rows="9" class="block p-2.5 w-full text-sm text-gray-700 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-slate-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Any project ideas, reasoning..."></textarea>
 
-<form class="max-w-sm mx-auto">
+          <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 mt-8 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Send</button>
+        </form>
+      </section>
 
-  <label for="website-admin" class="block mb-2 text-sm font-bold text-gray-700 mt-2">Company Name</label>
-  <div class="flex">
-    <span class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 border border-e-0 border-gray-300 rounded-s-md dark:bg-sky-900 dark:text-gray-400 dark:border-gray-600">
-      <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-        <path d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm0 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm0 13a8.949 8.949 0 0 1-4.951-1.488A3.987 3.987 0 0 1 9 13h2a3.987 3.987 0 0 1 3.951 3.512A8.949 8.949 0 0 1 10 18Z"/>
-      </svg>
-    </span>
-    <input type="text" id="website-admin" class="rounded-none rounded-e-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm p-2.5  dark:bg-sky-900 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Your company">
+      <!-- Contact Info Section -->
+      <section class="contact-info w-1/2 ml-4" id="contact">
+        <h2 class="text-3xl font-bold text-gray-700 mb-4">Get in touch</h2>
+        <p class="text-gray-700 mb-4">
+          The Data and Artificial Intelligence Competence Lab at Sirris (EluciDATA Lab) combines Sirris' expertise in advanced data processing and artificial intelligence (AI) with a mission to drive data innovation and foster the widespread adoption of AI in the Belgian technology industry.
+        </p>
+        <div>
+          <h3 class="text-lg font-semibold text-gray-700 mb-2">Address</h3>
+          <p class="text-gray-700 mb-4">
+            Boulevard A. Reyerslaan 80<br>
+            1030 Brussels, Belgium
+          </p>
+          <h3 class="text-lg font-semibold text-gray-700 mb-2">Telephone</h3>
+          <p class="text-gray-700 mb-4">+32 0x xx xx xx xx</p>
+          <h3 class="text-lg font-semibold text-gray-700 mb-2">Email</h3>
+          <p class="text-gray-700 mb-4">elucidatalab@sirris.be</p>
+        </div>
+      </section>
+    </div>
   </div>
+</div>
 
-  <label for="message" class="block mb-2 text-sm  text-gray-700 font-bold mt-2">Your message, motivation</label>
-  <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-700 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-sky-900 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Any project ideas, reasoning..."></textarea>
 
-  <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 mt-8
-  focus:ring-4 focus:outline-none focus:ring-blue-200 dark:bg-blue-600
-   dark:hover:bg-blue-700 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center"
-   >Become member</button>
-</form>
-</section>
-
-      <section class="current-members">
+      <section class="current-members" id="members">
         <h1 class="text-5xl font-bold text-gray-700 m-4 pt-16 text-center">
             <span class="underline">Members</span> of the community
         </h1>
@@ -152,3 +173,15 @@ Be informed about new R&D proposals and take part in their industrial consortia
       </div>
       </section>
 </main>
+
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+              behavior: 'smooth'
+          });
+      });
+  });
+</script>
