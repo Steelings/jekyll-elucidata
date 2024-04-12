@@ -83,3 +83,11 @@ npm start
 
 * [ ] Create About section
 * [ ] Starter kit nesting
+* [ ] Documentation
+* [ ] No Ratings
+* [ ] Starter kit Landing page with call-to-action to notebooks
+* [ ] Redirects to seperate blog posts about the seperate skit parts
+* [ ] skit parts redirections under each posts
+* [ ] Search bar functionality
+* [ ] Full responsiveness
+* [ ] Mail Functionality
