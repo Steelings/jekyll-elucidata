@@ -81,7 +81,6 @@ npm start
 
 ## :compass: Roadmap
 
-* [ ] Create About section
 * [ ] Starter kit nesting
 * [ ] Documentation
 * [ ] No Ratings
