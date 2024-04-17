@@ -80,13 +80,11 @@ npm start
 
 
 ## :compass: Roadmap
-
-* [ ] Starter kit nesting
+* [ ] 404 not found
 * [ ] Documentation
-* [ ] No Ratings
-* [ ] Starter kit Landing page with call-to-action to notebooks
 * [ ] Redirects to seperate blog posts about the seperate skit parts
 * [ ] skit parts redirections under each posts
 * [ ] Search bar functionality
 * [ ] Full responsiveness
 * [ ] Mail Functionality
+* [ ] Pipeline to github page hosting
