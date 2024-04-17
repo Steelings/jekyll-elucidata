@@ -1,6 +1,10 @@
 ---
+title: first post
 layout: post
 author: jill
+image: src/assets/SK_overview 1.png
+category: Company
+read_time: 1 min
 ---
 
 A banana is an edible fruit – botanically a berry – produced by several

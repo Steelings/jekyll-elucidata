@@ -14,4 +14,5 @@ sttesttesttesttesttesttesttesttesttest
 testtesttesttesttesttest
 "
 difficulty: 5
+notebook: https://colab.research.google.com/github/EluciDATALab/elucidatalab.starterkits/blob/main/notebooks/SK_4_1_Intelligent_Data_Retention/elucidata_demonstrator_4_1.ipynb
 ---
