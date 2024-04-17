@@ -7,6 +7,11 @@ categories:
     - Prediction
 image: src/assets/life-prediction.png
 description: Example of a commonly used algorithm
-excerpt: "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttestv"
+excerpt: "testtesttesttesttesttesttesttesttestte
+sttesttesttesttesttesttesttesttesttest
+testtesttesttesttesttesttesttesttestte
+sttesttesttesttesttesttesttesttesttest
+testtesttesttesttesttest
+"
 difficulty: 5
 ---

@@ -7,7 +7,7 @@ layout: default
 <html lang="{{ page.lang | default: site.lang | default: 'en' }}" class="scroll-smooth">
 <body class="font-[Poppins] bg-gradient-to-br from-gray-50 via-sky-200 to-blue-300 min-h-screen">
 
-<div class="mx-auto px-12 lg:px-60 xl:px-96">
+<div class="mx-auto px-12 lg:px-60 xl:px-96 pt-32">
     <h1 class="font-bold flex justify-center text-4xl pt-16 m-4 text-gray-700">{{ page.title }}</h1>
     <div class="flex justify-between pt-8 p-8">
         <!-- Left side -->
@@ -56,7 +56,6 @@ layout: default
         <h2 class="mb-4 font-bold text-3xl text-gray-700">You Might Also Like …</h2>
         <ul class="list-disc pl-4 mb-8">
         {% for post in site.posts limit:5 %}
-        // filter by tag (?)//
         <li class="mb-2">
             <a href="{{ site.baseurl }}{{ post.url }}" class="text-blue-500 hover:underline">{{ post.title }}</a>
         </li>
@@ -80,16 +79,7 @@ layout: default
     </div>
 </div>
     
-
-    <!-- Hamburger dropdown menu  -->
     <script>
-        const navLinks = document.querySelector('.nav-links')
-        function onToggleMenu(e){
-            e.name = e.name === 'menu' ? 'close' : 'menu'
-            navLinks.classList.toggle('top-[4%]')
-        }
-
-
         function copyToClipboard(text) {
         const textarea = document.createElement('textarea');
         textarea.value = text;

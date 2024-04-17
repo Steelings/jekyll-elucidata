@@ -1,0 +1,4 @@
+---
+
+layout: skit_details
+---

@@ -13,18 +13,47 @@
 
     {%- include scrolltotop.html -%}
 
-    <!-- Hamburger dropdown menu  -->
+
+    <!-- JavaScript code -->
     <script>
-        const navLinks = document.querySelector('.nav-links')
-        function onToggleMenu(e){
-            e.name = e.name === 'menu' ? 'close' : 'menu'
-            navLinks.classList.toggle('top-[4%]')
-        }
-    </script>
+      const searchInput = document.querySelector('input[type="search"]');
 
-  
+      searchInput.addEventListener('input', (event) => {
+          const searchTerm = event.target.value;
+          const sanitizedTerm = DOMPurify.sanitize(searchTerm);
+      });
 
+      const currentPage = window.location.pathname;
+      const navLinksUnderline = document.querySelectorAll('.nav-links a');
 
+      navLinksUnderline.forEach(link => {
+          if (link.getAttribute('href') === currentPage) {
+              link.querySelector('span').classList.add('scale-x-100');
+          }
+      })
+
+      const header = document.querySelector('.header-scroll');
+      let lastScroll = 0;
+
+      window.addEventListener('scroll', () => {
+          const currentScroll = window.pageYOffset;
+          if (currentScroll > lastScroll) {
+              header.classList.add('-translate-y-full');
+          } else {
+              header.classList.remove('-translate-y-full');
+          }
+          lastScroll = currentScroll;
+      });
+
+      // Toggle mobile menu
+      const hamburgerBtn = document.getElementById('hamburger');
+      const mobileNav = document.querySelector('.mobile-nav');
+
+      hamburgerBtn.addEventListener('click', () => {
+          mobileNav.classList.toggle('active');
+          hamburgerBtn.querySelector('ion-icon').classList.toggle('transform');
+      });
+  </script>
   </body> 
 
 </html>
