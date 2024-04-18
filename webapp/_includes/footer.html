@@ -44,7 +44,7 @@
                         </a>
                     </li>
                     {% assign blog_posts = site.posts | where: "layout", "post" | sort: 'date' | reverse %}
-                    {% for post in blog_posts limit:5 %}
+                    {% for post in blog_posts limit:4 %}
                         <li class="mb-2">
                             <a href="{{ site.baseurl }}{{ post.url }}" class="text-slate-100 hover:underline block">{{ post.title }}</a>
                         </li>
