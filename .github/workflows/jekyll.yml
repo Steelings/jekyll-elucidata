@@ -38,6 +38,10 @@ jobs:
         uses: actions/configure-pages@v5
         with:
           base_dir: webapp # Set the base directory to /webapp
+      - name: Install dependencies
+        run: |
+          cd webapp # Navigate to the webapp directory
+          bundle install
       - name: Build with Jekyll
         # Outputs to the './webapp' directory
         run: |
