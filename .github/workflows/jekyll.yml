@@ -64,6 +64,11 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: webapp # Use the correct artifact name
+          path: webapp
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
