@@ -80,3 +80,4 @@ jobs:
           reporting_interval: 5000
           artifact_name: webapp # Correct artifact name
           preview: false
+          debug: true
