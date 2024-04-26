@@ -80,8 +80,6 @@ npm start
 
 
 ## :compass: Roadmap
-* [ ] Footer all redirects
-* [ ] 404 not found page customization
 * [ ] Documentation
 * [ ] Redirects to seperate blog posts about the seperate skit parts
 * [ ] skit parts redirections under each posts
