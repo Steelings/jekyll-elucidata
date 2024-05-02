@@ -130,6 +130,12 @@ excerpt: "This is a test post to demonstrate adding additional data to a Markdow
 
 ### How to create a starter kit
 
+Navigate to the _posts folder and go one folder deeper, under the "skits" folder: _posts/skits/YOUR-MARKDOWN-FILE-HERE.markdown
+
+
+
+### Starter kit parameters
+
 Please make sure the markdown file starts and finishes with 3 dashes: '---'
 
 A starter kit should countain the following:
