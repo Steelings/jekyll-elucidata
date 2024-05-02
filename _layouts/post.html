@@ -67,12 +67,10 @@ layout: default
         <div class="mb-8">
             <h2 class="font-bold text-3xl mb-4 text-gray-700">Categories</h2>
             <ul class="flex flex-wrap text-center justify-start">
-                <li class="mr-4 mb-2">Engineering</li>
-                <li class="mr-4 mb-2">Data Science</li>
-                <li class="mr-4 mb-2">Future</li>
-                <li class="mr-4 mb-2">Research</li>
-                <li class="mr-4 mb-2">Development</li>
-                <li class="mb-2">Company</li>
+                {% assign all_categories = site.posts | map: 'categories' | flatten | uniq %}
+                {% for category in all_categories %}
+                    <li class="mr-4 mb-2 font-normal text-xl text-gray-700">{{ category }}</li>
+                {% endfor %}
             </ul>
         </div>
         <hr class="h-px my-8 bg-gray-400 border-0">
