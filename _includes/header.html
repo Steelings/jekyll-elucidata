@@ -1,12 +1,22 @@
-<header class="bg-sky-900 dark:bg-slate-700 dark:border-gray-500 border-gray-300 p-2 shadow-lg w-full fixed top-0 transition-transform transform duration-700 ease-in-out header-scroll z-50 mb-auto">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile-First Header</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+<header class="bg-sky-900 dark:bg-slate-700 dark:border-gray-500 border-gray-300 p-2 shadow-lg w-full fixed top-0 transition-transform transform duration-700 ease-in-out header-scroll z-50">
     <nav class="flex justify-between items-center w-[92%] mx-auto">
         <div>
             <a href="/elucidatalab.sk_platform/" class="block">
                 <img class="w-48 py-2 cursor-pointer" src="src/assets/logo.png" alt="EluciDATA Logo">
             </a>
         </div>
-        <div id="navLinks" class="nav-links duration-500 md:static bg-sky-900 dark:bg-slate-700 md:w-auto w-full flex flex-col items-center md:flex-row">
-            <ul class="flex md:flex-row md:items-center md:gap-[4vw] gap-8">
+        <div id="navLinks" class="nav-links duration-500 bg-sky-900 dark:bg-slate-700 md:w-auto w-full fixed top-0 left-0 h-full md:h-auto md:static flex flex-col md:flex-row items-center justify-center md:justify-end transform translate-x-full md:translate-x-0 transition-transform ease-in-out">
+            <ul class="flex flex-col md:flex-row md:items-center md:gap-[4vw] gap-8 mt-20 md:mt-0">
                 <li>
                     <a class="relative text-2xl text-slate-50 dark:text-white group" href="skits" onclick="closeMenu()">
                         Starter Kits
@@ -33,15 +43,13 @@
                 </li>
             </ul>
         </div>
-        <div class="md:hidden">
+        <div class="md:hidden flex items-center">
             <button id="hamburger" class="text-white focus:outline-none">
                 <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
             </button>
-        </div>
-        <div id="closeButton" class="md:hidden hidden">
-            <button class="text-white focus:outline-none">
+            <button id="closeButton" class="text-white focus:outline-none hidden">
                 <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M6 18L18 6M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
@@ -54,32 +62,29 @@
     const hamburger = document.getElementById('hamburger');
     const navLinks = document.getElementById('navLinks');
     const closeButton = document.getElementById('closeButton');
-    const currentPage = window.location.pathname;
-    const navLinksUnderline = document.querySelectorAll('.nav-links a');
-
-    navLinksUnderline.forEach(link => {
-        if (link.getAttribute('href') === currentPage) {
-            link.querySelector('span').classList.add('scale-x-100');
-        }
-    });
+    const header = document.querySelector('.header-scroll');
+    let lastScroll = 0;
 
     hamburger.addEventListener('click', () => {
-        navLinks.classList.toggle('hidden');
-        closeButton.classList.toggle('hidden');
+        navLinks.classList.remove('translate-x-full');
+        navLinks.classList.add('translate-x-0');
+        closeButton.classList.remove('hidden');
+        hamburger.classList.add('hidden');
     });
 
     closeButton.addEventListener('click', () => {
-        navLinks.classList.add('hidden');
+        navLinks.classList.remove('translate-x-0');
+        navLinks.classList.add('translate-x-full');
         closeButton.classList.add('hidden');
+        hamburger.classList.remove('hidden');
     });
 
     function closeMenu() {
-        navLinks.classList.add('hidden');
+        navLinks.classList.remove('translate-x-0');
+        navLinks.classList.add('translate-x-full');
         closeButton.classList.add('hidden');
+        hamburger.classList.remove('hidden');
     }
-
-    const header = document.querySelector('.header-scroll');
-    let lastScroll = 0;
 
     window.addEventListener('scroll', () => {
         const currentScroll = window.pageYOffset;
@@ -91,19 +96,21 @@
         lastScroll = currentScroll;
     });
 
-    // Show/hide hamburger button based on screen size
     const mq = window.matchMedia('(max-width: 767px)');
-
     function handleMediaQueryChange(mq) {
         if (mq.matches) {
             hamburger.classList.remove('hidden');
-            navLinks.classList.add('hidden');
+            navLinks.classList.add('translate-x-full');
+            closeButton.classList.add('hidden');
         } else {
             hamburger.classList.add('hidden');
-            navLinks.classList.remove('hidden');
+            navLinks.classList.remove('translate-x-full');
         }
     }
 
-    handleMediaQueryChange(mq); // Initial check
-    mq.addListener(handleMediaQueryChange); // Listen for changes
+    handleMediaQueryChange(mq);
+    mq.addListener(handleMediaQueryChange);
 </script>
+
+</body>
+</html>
