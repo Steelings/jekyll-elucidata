@@ -9,13 +9,13 @@
 <body class="bg-gray-100">
 
 <header class="bg-sky-900 dark:bg-slate-700 dark:border-gray-500 border-gray-300 p-2 shadow-lg w-full fixed top-0 transition-transform transform duration-700 ease-in-out header-scroll z-50">
-    <nav class="flex justify-between items-center w-[92%] mx-auto">
+    <nav class="flex justify-between items-center w-full md:w-[92%] mx-auto">
         <div>
             <a href="/elucidatalab.sk_platform/" class="block">
                 <img class="w-48 py-2 cursor-pointer" src="src/assets/logo.png" alt="EluciDATA Logo">
             </a>
         </div>
-        <div id="navLinks" class="nav-links duration-500 bg-sky-900 dark:bg-slate-700 md:w-auto w-full fixed top-0 left-0 h-full md:h-auto md:static flex flex-col md:flex-row items-center justify-center md:justify-end transform translate-x-full md:translate-x-0 transition-transform ease-in-out">
+        <div id="navLinks" class="nav-links duration-500 bg-sky-900 dark:bg-slate-700 md:w-auto w-full fixed top-0 left-0 h-full md:h-auto md:static flex flex-col md:flex-row items-center justify-center md:justify-end transform -translate-x-full md:translate-x-0 transition-transform ease-in-out">
             <ul class="flex flex-col md:flex-row md:items-center md:gap-[4vw] gap-8 mt-20 md:mt-0">
                 <li>
                     <a class="relative text-2xl text-slate-50 dark:text-white group" href="skits" onclick="closeMenu()">
@@ -66,7 +66,7 @@
     let lastScroll = 0;
 
     hamburger.addEventListener('click', () => {
-        navLinks.classList.remove('translate-x-full');
+        navLinks.classList.remove('-translate-x-full');
         navLinks.classList.add('translate-x-0');
         closeButton.classList.remove('hidden');
         hamburger.classList.add('hidden');
@@ -74,14 +74,14 @@
 
     closeButton.addEventListener('click', () => {
         navLinks.classList.remove('translate-x-0');
-        navLinks.classList.add('translate-x-full');
+        navLinks.classList.add('-translate-x-full');
         closeButton.classList.add('hidden');
         hamburger.classList.remove('hidden');
     });
 
     function closeMenu() {
         navLinks.classList.remove('translate-x-0');
-        navLinks.classList.add('translate-x-full');
+        navLinks.classList.add('-translate-x-full');
         closeButton.classList.add('hidden');
         hamburger.classList.remove('hidden');
     }
@@ -100,11 +100,11 @@
     function handleMediaQueryChange(mq) {
         if (mq.matches) {
             hamburger.classList.remove('hidden');
-            navLinks.classList.add('translate-x-full');
+            navLinks.classList.add('-translate-x-full');
             closeButton.classList.add('hidden');
         } else {
             hamburger.classList.add('hidden');
-            navLinks.classList.remove('translate-x-full');
+            navLinks.classList.remove('-translate-x-full');
         }
     }
 
