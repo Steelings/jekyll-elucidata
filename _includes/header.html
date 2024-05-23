@@ -73,4 +73,21 @@
         closeButton.classList.add('hidden');
         hamburger.classList.remove('hidden');
     }
+
+    // Ensure the hamburger icon is visible on mobile and hidden on larger screens
+    const mq = window.matchMedia('(max-width: 767px)');
+    function handleMediaQueryChange(mq) {
+        if (mq.matches) {
+            hamburger.classList.remove('hidden');
+            navLinks.classList.add('-translate-x-full');
+            closeButton.classList.add('hidden');
+        } else {
+            hamburger.classList.add('hidden');
+            navLinks.classList.remove('-translate-x-full');
+            closeButton.classList.add('hidden');
+        }
+    }
+
+    handleMediaQueryChange(mq);
+    mq.addListener(handleMediaQueryChange);
 </script>
