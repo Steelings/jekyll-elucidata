@@ -1,37 +1,116 @@
-<header class="bg-white">
-    <nav class="flex justify-between items-center w-[92%]  mx-auto">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile-First Header</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+<header class="bg-sky-900 dark:bg-slate-700 dark:border-gray-500 border-gray-300 p-2 shadow-lg w-full fixed top-0 transition-transform transform duration-700 ease-in-out header-scroll z-50">
+    <nav class="flex justify-between items-center w-full md:w-[92%] mx-auto">
         <div>
-            <a href="/" class="block">
-            <img class="w-48 py-2 cursor-pointer" src="src/assets/logo.png" alt="Logo">  
+            <a href="/elucidatalab.sk_platform/" class="block">
+                <img class="w-48 py-2 cursor-pointer" src="src/assets/logo.png" alt="EluciDATA Logo">
             </a>
-        <div
-            class="nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
-            <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+        </div>
+        <div id="navLinks" class="nav-links duration-500 bg-sky-900 dark:bg-slate-700 md:w-auto w-full fixed top-0 left-0 h-full md:h-auto md:static flex flex-col md:flex-row items-center justify-center md:justify-end transform -translate-x-full md:translate-x-0 transition-transform ease-in-out">
+            <ul class="flex flex-col md:flex-row md:items-center md:gap-[4vw] gap-8 mt-20 md:mt-0">
                 <li>
-                    <a class="hover:text-gray-500" href="skits">Starter Kits</a>
+                    <a class="relative text-2xl text-slate-50 dark:text-white group" href="skits" onclick="closeMenu()">
+                        Starter Kits
+                        <span class="absolute bottom-0 left-0 w-full h-1 bg-slate-50 dark:bg-slate-300 transform scale-x-0 group-hover:scale-x-100 transition-transform"></span>
+                    </a>
                 </li>
                 <li>
-                    <a class="hover:text-gray-500" href="blog">Blog</a>
+                    <a class="relative text-2xl text-slate-50 dark:text-white group" href="blog" onclick="closeMenu()">
+                        Blog
+                        <span class="absolute bottom-0 left-0 w-full h-1 bg-slate-50 dark:bg-slate-300 transform scale-x-0 group-hover:scale-x-100 transition-transform"></span>
+                    </a>
                 </li>
                 <li>
-                    <a class="hover:text-gray-500" href="community">Community</a>
+                    <a class="relative text-2xl text-slate-50 dark:text-white group" href="community" onclick="closeMenu()">
+                        Community
+                        <span class="absolute bottom-0 left-0 w-full h-1 bg-slate-50 dark:bg-slate-300 transform scale-x-0 group-hover:scale-x-100 transition-transform"></span>
+                    </a>
                 </li>
                 <li>
-                    <a class="hover:text-gray-500" href="about">About</a>
+                    <a class="relative text-2xl text-slate-50 dark:text-white group" href="about" onclick="closeMenu()">
+                        About
+                        <span class="absolute bottom-0 left-0 w-full h-1 bg-slate-50 dark:bg-slate-300 transform scale-x-0 group-hover:scale-x-100 transition-transform"></span>
+                    </a>
                 </li>
-             
             </ul>
         </div>
-        <div class="flex items-center gap-6">
-            <button class="bg-[#a6c1ee] text-white px-5 py-2 rounded-full hover:bg-[#87acec]">Sign in</button>
-            <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+        <div class="md:hidden flex items-center">
+            <button id="hamburger" class="text-white focus:outline-none">
+                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <button id="closeButton" class="text-white focus:outline-none hidden">
+                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 18L18 6M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
         </div>
+    </nav>
 </header>
 
 <script>
-    const navLinks = document.querySelector('.nav-links')
-    function onToggleMenu(e){
-        e.name = e.name === 'menu' ? 'close' : 'menu'
-        navLinks.classList.toggle('top-[9%]')
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    const closeButton = document.getElementById('closeButton');
+    const header = document.querySelector('.header-scroll');
+    let lastScroll = 0;
+
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.remove('-translate-x-full');
+        navLinks.classList.add('translate-x-0');
+        closeButton.classList.remove('hidden');
+        hamburger.classList.add('hidden');
+    });
+
+    closeButton.addEventListener('click', () => {
+        navLinks.classList.remove('translate-x-0');
+        navLinks.classList.add('-translate-x-full');
+        closeButton.classList.add('hidden');
+        hamburger.classList.remove('hidden');
+    });
+
+    function closeMenu() {
+        navLinks.classList.remove('translate-x-0');
+        navLinks.classList.add('-translate-x-full');
+        closeButton.classList.add('hidden');
+        hamburger.classList.remove('hidden');
     }
+
+    window.addEventListener('scroll', () => {
+        const currentScroll = window.pageYOffset;
+        if (currentScroll > lastScroll) {
+            header.classList.add('-translate-y-full');
+        } else {
+            header.classList.remove('-translate-y-full');
+        }
+        lastScroll = currentScroll;
+    });
+
+    const mq = window.matchMedia('(max-width: 767px)');
+    function handleMediaQueryChange(mq) {
+        if (mq.matches) {
+            hamburger.classList.remove('hidden');
+            navLinks.classList.add('-translate-x-full');
+            closeButton.classList.add('hidden');
+        } else {
+            hamburger.classList.add('hidden');
+            navLinks.classList.remove('-translate-x-full');
+        }
+    }
+
+    handleMediaQueryChange(mq);
+    mq.addListener(handleMediaQueryChange);
 </script>
+
+</body>
+</html>
