@@ -2,7 +2,7 @@
 summary: TRAIL is an overall structure, which aims at fostering collaboration and research around AI in Wallonia and Brussels between universities and research centers in line with regional policies.
 title: EluciDATA Lab  involved in TRAIL (Trusted AI Labs) – Walloon initiative to foster research and collaboration around AI
 date: 10/09/2020
-Featured_Image: ../img/blogs/SKAIDive.jpg
+image: src/assets/SKAIDive.jpg
 ---
 
 <p>TRAIL is an overall structure, which aims at fostering collaboration and research around AI in Wallonia and Brussels between universities and research centers in line with regional policies.&nbsp;</p>

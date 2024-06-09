@@ -2,10 +2,10 @@
 summary: We have been collaborating with Materialise and Cr3do to create an AM knowledge base that can assist in all major AM steps. The success of this collaboration has led to the project being selected for the **ITEA Award of Excellence 2023 for Innovation**.
 title: Collaboration with Materialise and Cr3do selected for the ITEA Award of Excellence for Innovation
 date: 26/06/2023
-Featured_Image: ../img/blogs/samuel_itea_award1_piqsels.com-id-zmdsp.jpg
+image: src/assets/samuel_itea_award1_piqsels.com-id-zmdsp.jpg
 ---
 
-<p><img alt="Collaboration with Materialise and Cr3do selected for the ITEA Award of Excellence for Innovation" src="../img/blogs/samuel_itea_award1_piqsels.com-id-zmdsp.jpg" /> <figcaption text-align='center'>https://www.piqsels.com/en/public-domain-photo-zmdsp</figcaption></p>
+
 
 <p><h3>Joint collaboration with Materialise and Cr3do selected for the ITEA Award of Excellence 2023 for Innovation</h3>
 <i>Although the additive manufacturing (AM) technology has evolved substantially over the last decades, the overall end to-end process involves many complex steps and still today requires manual input from an engineer at crucial points. We have been collaborating with Materialise and Cr3do to create an AM knowledge base that can assist in all major AM steps. The success of this collaboration has led to the project being selected for the <b>ITEA Award of Excellence 2023 for Innovation</b></i></p>

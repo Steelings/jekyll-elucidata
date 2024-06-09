@@ -2,12 +2,12 @@
 summary: I once had a very frightening, and at the same time weird, experience in Edinburgh. In the beginning of the nineties, I was on a short study visit in the Department of Computer Science. I hardly knew anybody there and my English was far from fluent. One evening, at the end of a movie night, a Brazilian colleague left me behind alone at some bus stop. By the time I realised I took the wrong bus, it was already driving in the darkness somewhere outside of Edinburgh.
 title: Sir Adas' series: No laws can empower women career-wise without an adequate social system!
 date: 18/11/2020
-Featured_Image: ../img/blogs/sir_adas_empower_woman.jpg
+image: src/assets/sir_adas_empower_woman.jpg
 author: Elena Tsiporkova
 permanent_url: https://www.linkedin.com/pulse/laws-can-empower-women-career-wise-without-adequate-elena-tsiporkova/
 ---
 
-<p><img alt="sir_adas_empower_woman.jpg" src="../img/blogs/sir_adas_empower_woman.jpg" /></p>
+
 
 I once had a very frightening, and at the same time weird, experience in Edinburgh. In the beginning of the nineties, I was on a short study visit in the Department of Computer Science. I hardly knew anybody there and my English was far from fluent. One evening, at the end of a movie night, a Brazilian colleague left me behind alone at some bus stop. By the time I realised I took the wrong bus, it was already driving in the darkness somewhere outside of Edinburgh. I panicked and tried to interact, pushing my lousy English to the extreme, with the bus driver. At a certain moment the bus stopped in the middle of the road and to my big surprise a police car, called by the bus driver as turned out later, was waiting for me. They were very friendly and just gave me a lift home. Next morning, still very frightened and humiliated, I was boiling with anger when I met my colleague. I told him that his behaviour was unacceptable. No man in my native country would leave a woman alone at night. Apologising, he told me this was also the case in Brazil. He had actually doubted whether to offer me to see me home, but he feared my reaction. It seems he had pretty bad experience with being accused of sexism when opening the door for a woman or offering to carry her bag or to accompany her on her way home in the evening.
  I never understood this overfocus on these, in my opinion superficial, aspects of women-men interaction. I actually do not mind at all if someone opens the door for me and carries my bag. I am a small woman and considering that most of the stuff in this world has been designed by men for the averaged man (don’t get me started on this topic), I often find doors and other stuff much too big and heavy for me. However, I would certainly mind if I were interrupted during meetings (which was proven to happen to women much more often) and my professional opinion was not taken seriously.

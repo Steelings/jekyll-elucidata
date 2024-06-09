@@ -2,7 +2,7 @@
 summary: Our award-winning paper, titled "Multi-view Contextual Performance Profiling in Rotating Machinery," introduces an innovative unsupervised approach for asset performance profiling. The proposed methodology addresses the challenge of accurately estimating an asset's performance by considering the varying contexts to which industrial assets are exposed during operation.
 title: Our team won the Best Industry Paper Award at the IEEE Conference on Prognostics and Health Management
 date: 26/06/2023
-Featured_Image: ../img/blogs/conscious_phmc_award1.jpeg
+image: src/assets/conscious_phmc_award1.jpeg
 ---
 
 <p><img alt="Best Industry Paper Award at IEEE Conference on Prognostics and Health Management" src="../img/blogs/conscious_phmc_award3.jpeg" /> </p>

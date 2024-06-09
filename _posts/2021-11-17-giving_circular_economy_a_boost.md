@@ -2,7 +2,7 @@
 summary: A small part of discarded household appliances that are now shredded could be reused or refurbished, or their components reused in the refurbishing process. Refurnished household appliances can offer people in energy poverty an alternative to energy-consuming appliances. Through advanced data analytics and cognitive and assistive operator support the efficiency of the refurbishing process can be increased.
 title: Giving circular economy a boost by improving refurbishment process of household appliances
 date: 17/11/2021
-Featured_Image: ../img/blogs/Brefurbish_washer.jpg
+image: src/assets/Brefurbish_washer.jpg
 ---
 
 <p><em>A small part of discarded household appliances that are now shredded could be reused or refurbished, or their components reused in the refurbishing process. Refurnished household appliances can offer people in energy poverty an alternative to energy-consuming appliances. Through advanced data analytics and cognitive and assistive operator support the efficiency of the refurbishing process can be increased.</em></p>
