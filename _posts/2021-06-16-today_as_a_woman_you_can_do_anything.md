@@ -1,11 +1,11 @@
 ---
-summary: June 16th, 1963; Vostok 6, with Valentina (Valia) Tereshkova on board, was launched in space. The first, the youngest (only 26) and the only woman who has ever flown in space on a solo mission. Whau!
-At that time, me and my identical twin sister were still in the belly of my mother, fighting who will be the first one out to discover the world …. Well, in case you are curious, I kicked her out on an exploration mission.
-title: Sir Adas' series; Today, as a woman, you can do anything, but you must not do anything!
-date: 16/06/2021
-image: src/assets/sir_adas_you_can_do_anything.jpg
+title: Today, as a Woman, You Can Do Anything, But You Must Not Do Anything!
+date: 2021-06-16  
 author: Elena Tsiporkova
-permanent_url: https://www.linkedin.com/pulse/today-woman-you-can-do-anything-must-elena-tsiporkova/
+image: src/assets/sir_adas_you_can_do_anything.jpg  
+excerpt: June 16th, 1963: Vostok 6, with Valentina (Valia) Tereshkova on board, was launched in space. The first, the youngest (only 26) and the only woman who has ever flown in space on a solo mission. Whau!
+Category: Human Interest
+layout: post
 ---
 
 
@@ -30,16 +30,11 @@ It is not that there was no sexism in the Communist Eastern Europe at the time. 
 
 Tereshkova’s father was a tractor driver and her mother worked in a textile factory. Interested in parachuting from a young age, Tereshkova began skydiving at a local flying club, making her first jump at the age of 22 in May 1959. At the time of her selection as a cosmonaut, she was working as a textile worker in a local factory [1], but this did not stop her to pursue her dream! And it did not stop her to be a mother either!
 
-Sources:
+**Sources:**
 
-[1] http://www.esa.int/About_Us/ESA_history/50_years_of_humans_in_space/First_woman_in_space_Valentina
-
-[2] https://www.theguardian.com/global-development-professionals-network/2017/mar/29/valentina-tereshkova-first-woman-in-space-people-waste-money-on-wars
-
-[3] https://www.britannica.com/biography/Valentina-Tereshkova
-
-[4] https://www.smithsonianmag.com/smart-news/soviet-russia-had-a-better-record-of-training-women-in-stem-than-america-does-today-180948141/
-
-[5] https://www.knack.be/nieuws/wereld/wat-als-ik-een-man-was-geweest/article-normal-89077.html
-
-[6] https://en.wikipedia.org/wiki/Mansplaining
+* [ESA - First woman in space - Valentina Tereshkova](http://www.esa.int/About_Us/ESA_history/50_years_of_humans_in_space/First_woman_in_space_Valentina) ([1])
+* [Valentina Tereshkova: 'People waste money on wars'](https://www.theguardian.com/global-development-professionals-network/2017/mar/29/valentina-tereshkova-first-woman-in-space-people-waste-money-on-wars) ([2])
+* [Valentina Tereshkova](https://www.britannica.com/biography/Valentina-Tereshkova) ([3])
+* [Soviet Russia Had a Better Record of Training Women in STEM Than America Does Today](https://www.smithsonianmag.com/smart-news/soviet-russia-had-a-better-record-of-training-women-in-stem-than-america-does-today-180948141/) ([4])
+* [Wat als ik een man was geweest?](https://www.knack.be/nieuws/wereld/wat-als-ik-een-man-was-geweest/article-normal-89077.html) ([5])
+* [Mansplaining](https://en.wikipedia.org/wiki/Mansplaining) ([6])
