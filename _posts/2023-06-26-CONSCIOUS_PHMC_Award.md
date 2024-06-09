@@ -1,11 +1,11 @@
 ---
-summary: Our award-winning paper, titled "Multi-view Contextual Performance Profiling in Rotating Machinery," introduces an innovative unsupervised approach for asset performance profiling. The proposed methodology addresses the challenge of accurately estimating an asset's performance by considering the varying contexts to which industrial assets are exposed during operation.
+excerpt: Our award-winning paper, titled "Multi-view Contextual Performance Profiling in Rotating Machinery," introduces an innovative unsupervised approach for asset performance profiling. The proposed methodology addresses the challenge of accurately estimating an asset's performance by considering the varying contexts to which industrial assets are exposed during operation.
 title: Our team won the Best Industry Paper Award at the IEEE Conference on Prognostics and Health Management
 date: 26/06/2023
-image: src/assets/conscious_phmc_award1.jpeg
+image: src/assets/conscious_phmc_award1.jpg
 ---
 
-<p><img alt="Best Industry Paper Award at IEEE Conference on Prognostics and Health Management" src="../img/blogs/conscious_phmc_award3.jpeg" /> </p>
+
 
 <p><h3>A team of researchers from our EluciDATA Lab wins Best Industry Paper Award at IEEE Conference on Prognostics and Health Management (Montreal, Québec, June 5 - June 7, 2023)</h3>
 <i>Investigating the performance of industrial assets poses a challenge due to the complex dynamic operating environment that machines typically are exposed to under in real-world conditions. In order to avoid unplanned and expensive downtime it is crucial to properly assess the asset’s health status. Our award-winning paper, titled "Multi-view Contextual Performance Profiling in Rotating Machinery," addresses this challenge by introducing an innovative unsupervised approach. As part of AI-ICON CONSCIOUS project, and in collaboration with <b>I-Care</b> and <b>Engie</b>, our research confronts the task of accurately estimating an asset's performance by considering the varying contexts to which industrial assets are exposed during operation. Our work emphasizes the importance of understanding the factors that shape these contexts and account for them during asset condition monitoring and profiling. We validated the approach on a real-world dataset of feedwater pumps, demonstrating its tangible applicability to industrial problems. In this article we will sketch how our insightful approach can enhance asset management strategies.</i></p>
