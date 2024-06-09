@@ -1,6 +1,6 @@
 ---
 summary: I once had a very frightening, and at the same time weird, experience in Edinburgh. In the beginning of the nineties, I was on a short study visit in the Department of Computer Science. I hardly knew anybody there and my English was far from fluent. One evening, at the end of a movie night, a Brazilian colleague left me behind alone at some bus stop. By the time I realised I took the wrong bus, it was already driving in the darkness somewhere outside of Edinburgh.
-title: Sir Adas' series: No laws can empower women career-wise without an adequate social system!
+title: Sir Adas' series; No laws can empower women career-wise without an adequate social system!
 date: 18/11/2020
 image: src/assets/sir_adas_empower_woman.jpg
 author: Elena Tsiporkova
