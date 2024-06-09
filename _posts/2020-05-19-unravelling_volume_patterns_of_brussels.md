@@ -34,7 +34,7 @@ author: Michiel Dhont, Elena Tsiporkova, Tom Tourwé and Nicolás González-Dele
 <p class="rtejustify">The most recent relaxation, namely the opening of all B2C shops, results only in a <strong>moderate increase of 7% in the overall traffic that seems to be quite nicely spread over all days of the week.</strong> It appears that not everybody rushed to benefit immediately from the shopping opportunities at the same time. This has helped to avoid very busy peak periods at the shopping areas. It is also interesting to note that no increase of traffic was observed on Sunday, 17<sup>th</sup> of May. This indicates that people travelled as much as on the previous Sunday, which was Mother’s Day. Does this mean that people visited their friends on both Sundays, and not their mothers? Or they just visited their mothers again complying strictly to the rule of 4?</p>
 
 <hr />
-<p><em>Project subsidized by the Brussels-Capital Region - Innoviris.</em><a href="https://innoviris.brussels/" target="_blank"><img alt="RGB_innoviris_we fund your future_MAIN LOGO.jpg" src="../img/blogs/RGB_innoviris_we fund your future_MAIN LOGO.jpg" /></a></p>
+<p><em>Project subsidized by the Brussels-Capital Region - Innoviris.</em><a href="https://innoviris.brussels/" target="_blank"><img alt="RGB_innoviris_we fund your future_MAIN LOGO.jpg" src="src/assets/RGB_innoviris_we fund your future_MAIN LOGO.jpg" /></a></p>
 
 <p>&nbsp;</p>
 

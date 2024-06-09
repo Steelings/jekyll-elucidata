@@ -1,5 +1,5 @@
 ---
-summary: June 16th, 1963: Vostok 6, with Valentina (Valia) Tereshkova on board, was launched in space. The first, the youngest (only 26) and the only woman who has ever flown in space on a solo mission. Whau!
+summary: June 16th, 1963; Vostok 6, with Valentina (Valia) Tereshkova on board, was launched in space. The first, the youngest (only 26) and the only woman who has ever flown in space on a solo mission. Whau!
 At that time, me and my identical twin sister were still in the belly of my mother, fighting who will be the first one out to discover the world …. Well, in case you are curious, I kicked her out on an exploration mission.
 title: Sir Adas' series; Today, as a woman, you can do anything, but you must not do anything!
 date: 16/06/2021
