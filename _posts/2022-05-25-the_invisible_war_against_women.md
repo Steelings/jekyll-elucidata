@@ -9,7 +9,7 @@ permanent_url: https://www.linkedin.com/pulse/invisible-war-against-women-elena-
 
 
 <p>
-    <img alt="The invisible war" src="../img/blogs/sir_adas_invisible_war.jpg" />
+    <img alt="The invisible war" src="src/assets/sir_adas_invisible_war.jpg" />
     <figcaption text-align='center'>https://res.cloudinary.com/people-matters/image/upload/q_auto,f_auto/v1617632330/1617632330.jpg</figcaption>
 </p>
 
