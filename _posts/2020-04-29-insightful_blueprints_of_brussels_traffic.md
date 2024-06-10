@@ -3,7 +3,7 @@ title: Insightful blueprints of Brussels traffic emerge in times of covid-19
 date: 29/04/2020
 image: src/assets/cover photo - blog 1_0.jpg
 summary: In the context of the MISTic project, the EluciDATA Lab of Sirris started in the beginning of 2020 to gather publicly available data of the traffic in Brussels. At that moment, we did not have the slightest suspicion that the escalation of the corona epidemic will deliver a unique real-world dataset for our research. We are happy to share some of our very preliminary findings in this blog. More to follow in the upcoming weeks.
-author: Michiel Dhont and Elena Tsiporkova<
+author: Michiel Dhont and Elena Tsiporkova
 ---
 
 <p class="rtejustify">In the context of an industrial PhD project sponsored by <a href="https://innoviris.brussels/">Innoviris</a>, the <a href="https://elucidata.be/">EluciDATA Lab of Sirris</a> joined forces with&nbsp; <a href="https://www.macq.eu/">Macq</a> and <a href="https://www.vub.be/">VUB</a> to contribute to better traffic management solutions for the city of Brussels. To this end, we aim for developing an advanced trend analytics engine that facilitates understanding traffic situations in an accurate and situation-aware way.</p>
