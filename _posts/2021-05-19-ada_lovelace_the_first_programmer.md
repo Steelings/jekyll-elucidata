@@ -3,6 +3,7 @@ summary: Programming is for men! Withroughly 23 %1female workers in the IT secto
 title: Sir Adas' series; Ada Lovelace, the first programmer
 date: 2021-05-19
 image: src/assets/ada-lovelace-1068x653-1.jpg
+layout: post
 ---
 
 

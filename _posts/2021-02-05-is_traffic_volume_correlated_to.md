@@ -4,6 +4,7 @@ date: 2021-02-05
 image: src/assets/cover photo - blog 5_1.jpg
 summary: This blog is inspired by a quote of virologist Steven Van Gucht in Het Journaal on December 9; “... what is striking is that we move more often... and we know that that is a pretty good prediction of the future number of new infections." Since vehicle counts data is closely connected to people’s movements, it is worthwhile to investigate whether Steven Van Gucht’s statement is valid, i.e., how well traffic intensity correlates with Covid-19 infections.
 author: Michiel Dhont, Elena Tsiporkova and Tom Tourwé
+layout: post
 ---
 
 

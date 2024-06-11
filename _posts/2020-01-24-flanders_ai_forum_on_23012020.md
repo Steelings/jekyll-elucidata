@@ -3,6 +3,7 @@ summary: On January 23rd, Agoria, Voka, imec and Sirris with the support of VLAI
 title: Flanders AI Forum on 23/01/2020
 date: 2020-01-24
 image: src/assets/IMG_5919.JPG
+layout: post
 ---
 
 <p>On January 23<sup>rd</sup>, Agoria, Voka, imec and Sirris with the support of VLAIO organized the first Flanders AI Forum with&nbsp;the presence of Hilde Crevits, Viceminister-president, Vlaams minister van Economie, Innovatie, Werk, Social economie en Landbouw, to present <strong>different initiatives</strong> in the framework of the AI impulsprogramme.</p>

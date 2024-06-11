@@ -5,6 +5,7 @@ date: 2022-05-24
 image: src/assets/sir_adas_invisible_war.jpg
 author: Elena Tsiporkova
 permanent_url: https://www.linkedin.com/pulse/invisible-war-against-women-elena-tsiporkova/?trackingId=dU1x6gAeQ8%2BS9AjSVSkDyw%3D%3D
+layout: post
 ---
 
 

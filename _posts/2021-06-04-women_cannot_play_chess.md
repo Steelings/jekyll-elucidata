@@ -5,6 +5,7 @@ date: 2021-06-04
 image: src/assets/sir_adas_women_cannot_play_chess.jpeg
 author: Elena Tsiporkova
 permanent_url: https://www.linkedin.com/pulse/women-cannot-play-chess-elena-tsiporkova/
+layout: post
 ---
 
 

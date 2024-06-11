@@ -5,6 +5,7 @@ date: 2020-11-18
 image: src/assets/sir_adas_empower_woman.jpg
 author: Elena Tsiporkova
 permanent_url: https://www.linkedin.com/pulse/laws-can-empower-women-career-wise-without-adequate-elena-tsiporkova/
+layout: post
 ---
 
 

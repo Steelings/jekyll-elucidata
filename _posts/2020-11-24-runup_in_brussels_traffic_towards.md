@@ -4,6 +4,7 @@ date: 2020-11-24
 image: src/assets/cover photo - blog 4.jpg
 summary: In this fourth of a series of blogs concerning the traffic situation in Brussels in times of Covid-19 restrictions, we bring an update of the development of the traffic by comparing it with pre-Covid-19 outbreak times. For the first time we got access to more than two years of historical data before Covid-19 restrictions, which enables us to extract even more insights than we could before.
 author: Michiel Dhont, Elena Tsiporkova, Tom Tourwé and Nicolás González-Deleito
+layout: post
 ---
 
 

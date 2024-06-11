@@ -4,6 +4,7 @@ title: Interview 3E and EluciDATA Lab in the framework of the campaign "AI to bo
 date: 2021-08-21
 image: src/assets/default_news_image.jpg
 categories: Algorithms
+layout: post
 ---
 
 <div class="text-xl text-gray-700 font-semibold">

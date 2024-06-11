@@ -3,6 +3,7 @@ summary: The EluciDATA Lab of Sirris successfully initiates three new thematic I
 title: Three new thematic ICON projects on AI.
 date: 2021-01-04
 image: src/assets/vlaio-agentschap-innoveren-ondernemen.png
+layout: post
 ---
 
 <p><span style="color:#000000"><strong><span style="color:black">The EluciDATA Lab of Sirris successfully initiates three new thematic ICON projects on AI</span></strong></span></p>

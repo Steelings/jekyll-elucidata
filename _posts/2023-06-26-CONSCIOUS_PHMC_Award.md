@@ -3,6 +3,7 @@ excerpt: Our award-winning paper, titled "Multi-view Contextual Performance Prof
 title: Our team won the Best Industry Paper Award at the IEEE Conference on Prognostics and Health Management
 date: 2023-06-23
 image: src/assets/conscious_phmc_award1.jpg
+layout: post
 ---
 
 
