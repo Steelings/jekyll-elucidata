@@ -7,7 +7,7 @@ Featured_Image: ../Resource Demand Forecasting/img/SK_specific/RDF_figure1.png
 Welcome to the tutorial for the AI Starter Kit on resource demand forecasting.
 In this first video we will provide an overview of the actual business case we are tackling. We will introduce the most important concepts and explain why it is beneficial for resource planning to know the expected demand in the future.
 
-{% vimeo 600071623?h=7c4d53dd68 [500] [200] %}
+
 
 Resource demand forecasting concerns accurately predicting the future need for a resource, typically using historical information. It is one of the most essential steps in resource demand management, which tries to ensure that sufficient resources are available to satisfy a fluctuating demand. Resource demand forecasting allows one to plan ahead and guarantee that sufficient resources are available when needed and to avoid costly countermeasures in case of shortage.
 

@@ -7,7 +7,7 @@ collab: https://colab.research.google.com/github/EluciDATALab/elucidatalab.start
 ## Key Take Away Messages
 In the video tutorial for this AI Starter Kit, we demonstrated forecasting the demand for a particular resource at a particular point in the future, illustrated on the case of energy demand forecasting. In doing so, we have taken you through the different steps in the data science workflow.
 
-{% vimeo 600085743?h=492077c656 [500] [200] %}
+
 
 We first performed a number of required data preprocessing steps in order to prepare the data for further analysis. This included fusing the electricity and weather data, requiring to resampling the former data to a lower sampling rate.
 

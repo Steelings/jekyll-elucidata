@@ -6,7 +6,7 @@ Featured_Image: ../Resource Demand Forecasting/img/SK_specific/RDF_figure20.png
 ## Data Modelling and Forecasting
 Now that we gained the necessary insights from the data, extracted a number of meaningful features, and gained some theoretical background on regression models, we will use the AI Starter Kit to discover the most important factors for training a machine learning model. More specifically, we will analyze the influence of the training strategy, type of machine learning model and effect of data normalization on the model performance.
 
-{% vimeo 609878671?h=d2717b5769 [500] [200] %}
+
 
 To evaluate the performance of the models the mean absolute error or MAE is used - a metric commonly used in literature for this purpose. This metric quantifies to what extent the model forecasts are close to the real values. As the name suggests, the mean absolute error is an average of the absolute errors. It holds that the lower the MAE of the model, the better its performance.
 

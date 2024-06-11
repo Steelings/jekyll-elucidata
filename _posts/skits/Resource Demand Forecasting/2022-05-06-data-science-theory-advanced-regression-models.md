@@ -6,7 +6,7 @@ Featured_Image: ../Resource Demand Forecasting/img/SK_specific/RDF_figure19.png
 ## Data Science Theory: Advanced Regression Models
 Before deciding on the most appropriate algorithm to solve a particular data science problem, a first step is to decide which type of task you are trying to solve. In order to do so, you usually need to start with finding the answer to a number of questions, based on the case under consideration. Without a clear understanding of the use case, even the best data science model will not help.
 
-{% vimeo 609878568?h=47ea9f96b2 [500] [200] %}
+
 
 <center><img src="./img/SK_specific/RDF_figure17.png" width="800" class="center" /></center>
 

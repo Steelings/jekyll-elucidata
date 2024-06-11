@@ -6,7 +6,7 @@ Featured_Image: ../Resource Demand Forecasting/img/SK_specific/RDF_figure15.png
 ## Statistical Data Exploration and Feature Engineering
 In the former video, we performed a visual data exploration. We could already gain quite some insights from the figures we showed. In this video, we will concentrate stronger on statistics in order to verify our findings. Finally, we will prepare the datasets for modelling purposes by extracting a number of distinguishing features which will serve as input for the machine learning algorithm.
 
-{% vimeo 600082684?h=acc8ffd39c [500] [200] %}
+
 
 <center><img src="./img/SK_specific/RDF_figure13.png" width="800" class="center" /></center>
 

@@ -6,7 +6,7 @@ Featured_Image: ../Resource Demand Forecasting/img/SK_specific/RDF_figure11.png
 ## Visual Data Exploration
 Welcome to the third video of the tutorial for the AI Starter Kit on resource demand forecasting! Let us now explore the extended dataset in order to understand which factors influence the household energy consumption. Based on this exploration, we will later on identify which features are useful for training a machine learning model to forecast energy consumption.
 
-{% vimeo 600079168?h=f9255ab693 [500] [200] %}
+
 
 Time plots are a common way for exploring time series data, such as the energy consumption that we consider here. We explore time plots in different time frames in order to highlight different seasonal patterns in the data.
 

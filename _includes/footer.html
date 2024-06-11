@@ -45,9 +45,11 @@
                     </li>
                     {% assign blog_posts = site.posts | where: "layout", "post" | sort: 'date' | reverse %}
                     {% for post in blog_posts limit:4 %}
-                        <li class="mb-2">
-                            <a href="{{ site.baseurl }}{{ post.url }}" class="text-slate-100 hover:underline block">{{ post.title }}</a>
-                        </li>
+                    <li class="mb-2">
+                        {% assign words = post.title | split: ' ' %}
+                        {% assign truncated_title = words | slice: 0, 3 | join: ' ' %}
+                        <a href="{{ site.baseurl }}{{ post.url }}" class="text-slate-100 hover:underline block">{{ truncated_title | append: '...' }}</a>
+                    </li>
                     {% endfor %}
                 </ul>
             </div>

@@ -6,7 +6,7 @@ Featured_Image: ../Resource Demand Forecasting/img/SK_specific/RDF_figure5.png
 ## Data Preprocessing
 Welcome to the second video of the tutorial for the AI Starter Kit on resource demand forecasting! In this video, we will detail the dataset that we will use and perform the necessary preprocessing steps in order to prepare the data for further analysis.
 
-{% vimeo 600073886?h=8eed52df5b [500] [200] %}
+
 
 In this AI Starter Kit, we will work with a publicly available energy consumption dataset from the UCI repository. This dataset contains measurements of electric power consumption in one household, located near Paris, with a one-minute sampling rate over a period of almost 4 years. Different electrical quantities and sub-metering values are available, as you can see in the table.
 
