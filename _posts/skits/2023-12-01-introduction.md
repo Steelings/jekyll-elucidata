@@ -13,7 +13,7 @@ excerpt: More and more assets are instrumented and connected, in order to collec
 <br/> -->
 ### Description
 
-excerpt: More and more assets are instrumented and connected, in order to collect usage and performance data such that
+More and more assets are instrumented and connected, in order to collect usage and performance data such that
 they can be monitored (semi-)continuously. A large number of sensors can be installed which log data in high frequency, resulting in a large amount of data being collected. Typically, these large volumes of data are transferred to a central server, where they are further analysed. This is not always optimal however:
 
 - a stable communication mechanism is required which can be very expensive or is sometimes simply not available. A vehicle operating in a remote area for example doesn't always have a decent connection available, and sending huge amounts of data through a satellite connection is quite expensive.
