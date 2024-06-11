@@ -1,6 +1,6 @@
 ---
 title: The Small Ring of Brussels is Getting Gradually Cured (i.e. back to normal stagnated traffic) from Covid-19
-date: 1/07/2020
+date: 2020-07-01
 image: src/assets/cover photo - blog 3.jpg
 summary: This is the third in a series of blogs, in the context of the MISTic project. This blog we zoom into the traffic situation of the small ring of Brussels since the beginning of the restrictions until now, guided by some elucidating visual analytics.
 author: Michiel Dhont, Elena Tsiporkova, Tom Tourwé and Nicolás González-Deleito

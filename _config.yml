@@ -32,6 +32,7 @@ theme: minima
 permalink: /:slug
 postcss:
   plugins:
+    - jekyll-paginate
     - autoprefixer
     - postcss-import
     - postcss-flexbugs-fixes
@@ -39,6 +40,9 @@ postcss:
         autoprefixer: false
         safe: true
 
+
+paginate: 10
+paginate_path: "/page:num"
 
 collections:
   skits:
