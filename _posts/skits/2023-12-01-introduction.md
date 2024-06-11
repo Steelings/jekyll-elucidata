@@ -1,7 +1,7 @@
 ---
 layout: skits
 title: Introduction
-image: src/assets/SK_specific/SDTPhase5.png
+image: src/assets/SDTPhase5.png
 excerpt: More and more assets are instrumented and connected, in order to collect usage and performance data such that they can be monitored (semi-)continuously. A large number of sensors can be installed which log data in high frequency, resulting in a large amount of data being collected. Typically, these large volumes of data are transferred to a central server, where they are further analysed. This is not always optimal however
 
 ---
