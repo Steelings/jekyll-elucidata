@@ -4,11 +4,11 @@ date: 2021-06-16
 author: Elena Tsiporkova
 image: src/assets/sir_adas_you_can_do_anything.jpg  
 excerpt: June 16th, 1963; Vostok 6, with Valentina (Valia) Tereshkova on board, was launched in space. The first, the youngest (only 26) and the only woman who has ever flown in space on a solo mission. Whau!
-Category: Human Interest
+Categories: Human Interest
 layout: post
 ---
 
-
+<div class="text-xl text-gray-700 font-semibold">
 
 June 16th, 1963: Vostok 6, with Valentina (Valia) Tereshkova on board, was launched in space. The first, the youngest (only 26) and the only woman who has ever flown in space on a solo mission. Whau!
 
@@ -38,3 +38,6 @@ Tereshkova’s father was a tractor driver and her mother worked in a textile fa
 * [Soviet Russia Had a Better Record of Training Women in STEM Than America Does Today](https://www.smithsonianmag.com/smart-news/soviet-russia-had-a-better-record-of-training-women-in-stem-than-america-does-today-180948141/) ([4])
 * [Wat als ik een man was geweest?](https://www.knack.be/nieuws/wereld/wat-als-ik-een-man-was-geweest/article-normal-89077.html) ([5])
 * [Mansplaining](https://en.wikipedia.org/wiki/Mansplaining) ([6])
+
+
+</div>
