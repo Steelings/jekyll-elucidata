@@ -59,7 +59,8 @@ npm install -g tailwindcss
 Clone the project
 
 ```bash
-https://github.com/Steelings/jekyll-elucidata
+https://github.com/Steelings/steelings.github.io
+
 ```
 Go to the project directory
 ```bash
