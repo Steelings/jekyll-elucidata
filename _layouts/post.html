@@ -19,8 +19,14 @@ layout: default
             
             <!-- Author name and post date -->
             <div class="text-sm">
-                <div class="font-semibold">{{ page.author }}</div>
-                <div class="text-gray-500">{{ page.date | date_to_string }}</div>
+                <div class="font-semibold">Written by  
+                    {% if page.author %}
+                      {{ page.author }}
+                    {% else %}
+                      eluciDATA
+                    {% endif %}
+                  </div>
+                <div class="text-gray-500">On {{ page.date | date_to_string }}</div>
             </div>
         </div>
         <!-- Right side -->

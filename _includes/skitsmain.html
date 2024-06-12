@@ -1,7 +1,4 @@
-<main class="text-center max-w-screen-xl mx-auto px-4 mt-16"  >
-
-
-
+<main class="text-center max-w-screen-xl mx-auto px-4 mt-16">
   <section class="header-and-searchbar">
     <div class="flex flex-col md:justify-between">
       <h1 class="text-5xl font-bold text-gray-700 m-4 pt-16 text-center">AI Starter Kits</h1>
@@ -24,40 +21,26 @@
   
       <!-- Dropdown menu -->
       <div id="dropdown" class="z-10 hidden w-56 p-3 bg-white rounded-lg shadow dark:bg-gray-700">
-        <h6 class="mb-3 text-sm font-medium text-gray-900 dark:text-white">
-          Categories
-        </h6>
+        <h6 class="mb-3 text-sm font-medium text-gray-900 dark:text-white">Categories</h6>
         <ul class="space-y-2 text-sm" aria-labelledby="dropdownDefault">
+          {% assign skits_posts = site.posts | where: "layout", "skits" %}
+          {% assign all_categories = "" %}
+          {% for post in skits_posts %}
+            {% assign all_categories = all_categories | append: post.categories | join: "," | append: "," %}
+          {% endfor %}
+          {% assign all_categories = all_categories | split: "," | uniq | sort %}
           <li class="flex items-center">
-            <input id="very-easy" type="radio" name="difficulty" value="1" class="difficulty-checkbox" />
-            <label for="very-easy" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-100">
-              Engineering
-            </label>
+            <input id="all" type="radio" name="category" value="all" class="category-checkbox" checked />
+            <label for="all" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-100">All</label>
           </li>
-          <li class="flex items-center">
-            <input id="easy" type="radio" name="difficulty" value="2" class="difficulty-checkbox" />
-            <label for="easy" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-100">
-              Data Science
-            </label>
-          </li>
-          <li class="flex items-center">
-            <input id="intermediate" type="radio" name="difficulty" value="3" class="difficulty-checkbox" />
-            <label for="intermediate" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-100">
-              Future Research
-            </label>
-          </li>
-          <li class="flex items-center">
-            <input id="difficult" type="radio" name="difficulty" value="4" class="difficulty-checkbox" />
-            <label for="difficult" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-100">
-              Development
-            </label>
-          </li>
-          <li class="flex items-center">
-            <input id="very-hard" type="radio" name="difficulty" value="5" class="difficulty-checkbox" />
-            <label for="very-hard" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-100">
-              Company
-            </label>
-          </li>
+          {% for category in all_categories %}
+            {% if category != "" %}
+              <li class="flex items-center">
+                <input id="{{ category | slugify }}" type="radio" name="category" value="{{ category }}" class="category-checkbox" />
+                <label for="{{ category | slugify }}" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-100">{{ category }}</label>
+              </li>
+            {% endif %}
+          {% endfor %}
         </ul>
       </div>
     </div>
@@ -68,34 +51,35 @@
       var dropdownMenu = document.getElementById("dropdown");
       dropdownMenu.classList.toggle("hidden");
     });
-  
-    document.querySelectorAll('.difficulty-checkbox').forEach(function(radioInput) {
-    radioInput.addEventListener('change', function() {
-        const difficulty = this.value;
+
+    document.querySelectorAll('.category-checkbox').forEach(function(radioInput) {
+      radioInput.addEventListener('change', function() {
+        const category = this.value;
         const skitCards = document.querySelectorAll('.skit-cards > div');
 
         skitCards.forEach((card) => {
-            const cardDifficulty = card.dataset.difficulty;
+          const cardCategories = card.dataset.categories ? card.dataset.categories.split(',') : "";
 
-            if (difficulty === 'all' || difficulty === cardDifficulty) { 
-                card.classList.remove('hidden');
-                card.classList.add('block');
-            } else {
-                card.classList.add('hidden');
-                card.classList.remove('block');
-            }
+          if (category === 'all' || cardCategories.includes(category)) {
+            card.classList.remove('hidden');
+            card.classList.add('block');
+          } else {
+            card.classList.add('hidden');
+            card.classList.remove('block');
+          }
         });
+      });
     });
-});
+
+    document.querySelectorAll('.skit-cards > div').forEach((card) => {
+      console.log(card.dataset.categories);
+    });
   </script>
   
-
-
   <section class="skit-cards container mx-auto p-6">
-    {% assign skits_posts = site.posts | where: "layout", "skits" %}
     <div class="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
       {% for post in skits_posts %}
-        <div class="flex flex-col bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-500 hover:scale-105 h-full">
+        <div class="flex flex-col bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-500 hover:scale-105 h-full" data-categories="{{ post.categories | join: ',' }}">
           <img class="w-full h-48 object-cover" src="{{ post.image }}" alt="{{ post.title }}">
           <div class="flex flex-col justify-between flex-1 p-6 bg-sky-100">
             <div>
@@ -103,15 +87,12 @@
               <p class="text-sm text-gray-600 mb-4 text-justify">{{ post.excerpt }}</p>
             </div>
             <div>
-              <p class="text-sm text-gray-500 mb-4">By {{ post.author }}</p>
-              <a href="skit_details?title={{ post.title }}&author={{ post.author }}&notebook={{ post.notebook }}" class="block text-center bg-sky-900 dark:bg-slate-700 hover:bg-sky-950 hover:dark:bg-slate-800 text-white font-bold py-2 px-4 rounded">
-                Get Started
-              </a>
+              <p class="text-sm text-gray-500 mb-4">Made by {% if post.author %}{{ post.author }}{% else %}eluciDATA{% endif %}</p>
+              <a href="skit_details?title={{ post.title }}&author={{ post.author }}&notebook={{ post.notebook }}" class="block text-center bg-sky-900 dark:bg-slate-700 hover:bg-sky-950 hover:dark:bg-slate-800 text-white font-bold py-2 px-4 rounded">Get Started</a>
             </div>
           </div>
         </div>
       {% endfor %}
     </div>
   </section>
-  
 </main>

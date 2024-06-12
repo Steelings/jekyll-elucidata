@@ -7,7 +7,7 @@ image: src/assets/samuel_itea_award1_piqsels.com-id-zmdsp.jpg
 categories: Company
 layout: post
 ---
-<div class="text-xl text-gray-700 font-semibold">
+<div class="text-md text-gray-700 ">
 
 
 Joint collaboration with Materialise and Cr3do selected for the ITEA Award of Excellence 2023 for Innovation
