@@ -32,6 +32,7 @@ theme: minima
 permalink: /:slug
 postcss:
   plugins:
+    - jekyll-postcss
     - jekyll-paginate
     - jekyll-sitemap
     - autoprefixer
