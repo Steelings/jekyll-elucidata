@@ -33,6 +33,7 @@ permalink: /:slug
 postcss:
   plugins:
     - jekyll-paginate
+    - jekyll-sitemap
     - autoprefixer
     - postcss-import
     - postcss-flexbugs-fixes
