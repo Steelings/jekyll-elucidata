@@ -1,8 +1,12 @@
+---
+layout: default
+title: Skits
+---
+
 <main class="mt-16">
     <section class="header-and-searchbar">
         <div class="flex flex-col items-center">
           <h1 class="text-5xl font-bold text-gray-700 m-4 pt-16 text-center">{{ page.title }}</h1>
-          <h3 class="text-3xl font-medium text-gray-700 m-4 text-center">By {% if page.author %}{{ page.author }}{% else %}eluciDATA{% endif %}</h3>
           <hr class="h-1 my-8 bg-gray-500 border-0 w-3/4">
         </div>
     </section>
@@ -11,34 +15,40 @@
         <div class="md:w-1/4 p-4">
             <h2 class="mb-4 font-bold text-3xl text-gray-700">Starter kit topics</h2>
             <ul class="list-disc pl-4 mb-8 text-2xl">
-                {% for heading in page.content | split: '###' %}
-                    {% if forloop.index0 > 0 %}
-                        <li class="mb-2">
-                            <a href="#heading{{ forloop.index0 }}" class="text-blue-500 hover:underline">{{ heading | split: '\n' | first }}</a>
-                        </li>
-                    {% endif %}
+                {% assign skits_posts = site.posts | where: "layout", "skits" | sort: 'date' | reverse %}
+                {% for skit in skits_posts %}
+                    <li class="mb-2">
+                        <a href="{{ site.baseurl }}{{ skit.url }}" class="text-blue-500 hover:underline">{{ skit.title }}</a>
+                    </li>
                 {% endfor %}
             </ul>
-            <hr class="h-1 my-8 bg-gray-500 border-0 w-full">
-            <h2 class="mb-4 font-bold text-3xl text-gray-700 text-center">Interactive Notebook</h2>
-            <div class="flex justify-center pb-16">
-                <a id="starterKitNotebook" href="{{ page.notebook }}" class="mt-4 text-white bg-gradient-to-br from-purple-500 to-blue-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-3xl text-lg px-6 py-3">Get Started</a>
-            </div>
         </div>
 
         <div class="md:w-3/4 p-4">
-            {% if page.image %}
-                <div class="bg-cover bg-center text-white flex items-center justify-center h-64 mb-8" style="background-image: url('{{ page.image }}');">
-                    <span class="sr-only">Image of {{ page.title }}</span>
-                </div>
-            {% else %}
-                <div class="bg-blue-400 text-white flex items-center justify-center h-64 mb-8">
-                    <span>SOME IMAGE</span>
-                </div>
-            {% endif %}
-            <div id="content">
-                {{ page.content | markdownify }}
-            </div>
+            {% assign skits_posts = site.posts | where: "layout", "skits" | sort: 'date' | reverse %}
+            {% for skit in skits_posts %}
+                <article class="mb-16">
+                    <header class="mb-4">
+                        <h2 class="text-3xl font-bold text-gray-700">{{ skit.title }}</h2>
+                        <h3 class="text-xl font-medium text-gray-500">By {% if skit.author %}{{ skit.author }}{% else %}eluciDATA{% endif %}</h3>
+                    </header>
+                    {% if skit.image %}
+                        <div class="bg-cover bg-center text-white flex items-center justify-center h-64 mb-8" style="background-image: url('{{ skit.image }}');">
+                            <span class="sr-only">Image of {{ skit.title }}</span>
+                        </div>
+                    {% else %}
+                        <div class="bg-blue-400 text-white flex items-center justify-center h-64 mb-8">
+                            <span>SOME IMAGE</span>
+                        </div>
+                    {% endif %}
+                    <div class="content">
+                        {{ skit.content | markdownify }}
+                    </div>
+                    <div class="flex justify-center pb-16">
+                        <a href="{{ skit.notebook }}" class="mt-4 text-white bg-gradient-to-br from-purple-500 to-blue-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-3xl text-lg px-6 py-3">Get Started</a>
+                    </div>
+                </article>
+            {% endfor %}
         </div>
     </section>
 </main>
