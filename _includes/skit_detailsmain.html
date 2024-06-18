@@ -23,19 +23,21 @@
 
         <div class="md:w-3/4 p-4">
             {% for post in skits_posts %}
-                <article class="mb-16">
-                    <header class="mb-4">
-                        <h2 class="text-3xl font-bold text-gray-700">{{ post.title }}</h2>
-                        <h3 class="text-xl font-medium text-gray-500">By {% if post.author %}{{ post.author }}{% else %}eluciDATA{% endif %}</h3>
-                    </header>
-                    <img class="w-full h-full object-cover" src="{{ post.image }}" alt="{{ post.title }}">
-                    <div class="content">
-                        {{ post.content }}
-                    </div>
-                    <div class="flex justify-center pb-16">
-                        <a href="{{ post.notebook }}" class="mt-4 text-white bg-gradient-to-br from-purple-500 to-blue-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-3xl text-lg px-6 py-3">Get Started</a>
-                    </div>
-                </article>
+            <article class="mb-16 flex flex-col space-y-4">
+                <header class="mb-4">
+                    <h2 class="text-3xl font-bold text-gray-700">{{ post.title }}</h2>
+                    <h3 class="text-xl font-medium text-gray-500">By {% if post.author %}{{ post.author }}{% else %}eluciDATA{% endif %}</h3>
+                </header>
+                <div class="flex justify-center">
+                    <img class="w-3/4 md:w-full rounded-lg object-cover" src="{{ post.image }}" alt="{{ post.title }}">
+                </div>
+                <div class="content">
+                    {{ post.content }}
+                </div>
+                <div class="flex justify-center pb-16">
+                    <a href="{{ post.notebook }}" class="mt-4 text-white bg-gradient-to-br from-purple-500 to-blue-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-3xl text-lg px-6 py-3">Get Started</a>
+                </div>
+            </article>
             {% endfor %}
         </div>
     </section>
