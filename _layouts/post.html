@@ -37,18 +37,18 @@ layout: default
             <!-- Right side -->
             <div class="flex items-center space-x-4">
                 <!-- Twitter sharing icon -->
-                <a href="https://twitter.com/intent/tweet?url={{ page.url | url_encode }}" target="_blank" rel="noopener noreferrer" class="w-8 h-8 flex items-center justify-center bg-blue-500 rounded-full">
+                <a href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url | url_encode }}" target="_blank" rel="noopener noreferrer" class="w-8 h-8 flex items-center justify-center bg-blue-500 rounded-full">
                     <i class="fab fa-twitter text-white"></i>
                 </a>
                 <!-- Facebook sharing icon -->
-                <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | url_encode }}" target="_blank" rel="noopener noreferrer" class="w-8 h-8 flex items-center justify-center bg-blue-800 rounded-full">
+                <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url | url_encode }}" target="_blank" rel="noopener noreferrer" class="w-8 h-8 flex items-center justify-center bg-blue-800 rounded-full">
                     <i class="fab fa-facebook-f text-white"></i>
                 </a>
                 <!-- Link icon (copy link) -->
-                <button onclick="copyToClipboard('{{ page.url }}')" class="w-8 h-8 flex items-center justify-center bg-gray-300 rounded-full cursor-pointer">
+                <button onclick="copyToClipboard('{{ site.url }}{{ page.url }}')" class="w-8 h-8 flex items-center justify-center bg-gray-300 rounded-full cursor-pointer">
                     <i class="fas fa-link"></i>
                 </button>
-            </div>        
+            </div>  
         </div>
 
         <!-- Content section -->
@@ -90,15 +90,18 @@ layout: default
         
     <script>
         function copyToClipboard(text) {
-        const textarea = document.createElement('textarea');
-        textarea.value = text;
-        textarea.setAttribute('readonly', '');
-        textarea.style.position = 'absolute';
-        textarea.style.left = '-9999px';
-        document.body.appendChild(textarea);
-        textarea.select();
-        document.execCommand('copy');
-        document.body.removeChild(textarea);
+            const dummy = document.createElement('textarea');
+            document.body.appendChild(dummy);
+            dummy.value = text;
+            dummy.select();
+            document.execCommand('copy');
+            document.body.removeChild(dummy);
+
+            const messageElement = document.getElementById('copy-message');
+            messageElement.classList.remove('hidden');
+            setTimeout(() => {
+                messageElement.classList.add('hidden');
+            }, 2000); // Hide the message after 2 seconds
         }
     </script>
 </body>
