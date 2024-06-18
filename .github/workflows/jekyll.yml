@@ -59,7 +59,7 @@ jobs:
         run: |
           find _site -type f -exec chmod 755 {} \;
       - name: Upload artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-pages-artifact@v1
         with:
           name: site
           path: ./_site
