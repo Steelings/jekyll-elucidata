@@ -29,7 +29,7 @@
                         <h3 class="text-xl font-medium text-gray-500">By {% if post.author %}{{ post.author }}{% else %}eluciDATA{% endif %}</h3>
                     </header>
                     {% if post.image %}
-                        <div class="bg-cover bg-center text-white flex items-center justify-center h-64 mb-8" style="background-image: url('{{ post.image }}');">
+                    <div class="bg-cover bg-center text-white flex items-center justify-center h-64 mb-8" style="background-image: url('{{ post.image | relative_url }}');">
                             <span class="sr-only">Image of {{ post.title }}</span>
                         </div>
                     {% else %}
