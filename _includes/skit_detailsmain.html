@@ -8,7 +8,7 @@
 
     <section class="flex flex-col md:flex-row">
         <div class="md:w-1/4 p-4">
-            <h2 class="mb-4 font-bold text-3xl text-gray-700">Starter kit topics</h2>
+            <h2 class="mb-4 font-bold text-3xl text-gray-700">Starter kits list</h2>
             <ul class="list-disc pl-4 mb-8 text-2xl">
                 {% assign skits_posts = site.posts | where: "layout", "skits" | sort: 'date' | reverse %}
                 {% for skit in skits_posts %}
@@ -20,27 +20,26 @@
         </div>
 
         <div class="md:w-3/4 p-4">
-            {% assign skits_posts = site.posts | where: "layout", "skits" | sort: 'date' | reverse %}
-            {% for skit in skits_posts %}
+            {% for post in skits_posts %}
                 <article class="mb-16">
                     <header class="mb-4">
-                        <h2 class="text-3xl font-bold text-gray-700">{{ skit.title }}</h2>
-                        <h3 class="text-xl font-medium text-gray-500">By {% if skit.author %}{{ skit.author }}{% else %}eluciDATA{% endif %}</h3>
+                        <h2 class="text-3xl font-bold text-gray-700">{{ post.title }}</h2>
+                        <h3 class="text-xl font-medium text-gray-500">By {% if post.author %}{{ post.author }}{% else %}eluciDATA{% endif %}</h3>
                     </header>
-                    {% if skit.image %}
+                    {% if post.image %}
                         <div class="bg-cover bg-center text-white flex items-center justify-center h-64 mb-8" style="background-image: url('{{ skit.image }}');">
-                            <span class="sr-only">Image of {{ skit.title }}</span>
+                            <span class="sr-only">Image of {{ post.title }}</span>
                         </div>
                     {% else %}
                         <div class="bg-blue-400 text-white flex items-center justify-center h-64 mb-8">
-                            <span>SOME IMAGE</span>
+                            <span>Image could not be loaded.</span>
                         </div>
                     {% endif %}
                     <div class="content">
-                        {{ skit.content | markdownify }}
+                        {{ content | markdownify }}
                     </div>
                     <div class="flex justify-center pb-16">
-                        <a href="{{ skit.notebook }}" class="mt-4 text-white bg-gradient-to-br from-purple-500 to-blue-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-3xl text-lg px-6 py-3">Get Started</a>
+                        <a href="{{ post.notebook }}" class="mt-4 text-white bg-gradient-to-br from-purple-500 to-blue-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-3xl text-lg px-6 py-3">Get Started</a>
                     </div>
                 </article>
             {% endfor %}
