@@ -7,10 +7,10 @@ excerpt: More and more assets are instrumented and connected, in order to collec
 ---
 
 ## Introduction
-<!-- <br/>
+<br/>
 <p align="center"><iframe src="https://player.vimeo.com/video/612907452?h=1c07951c12&color=e700ef" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 <br/></p>
-<br/> -->
+<br/>
 ### Description
 
 More and more assets are instrumented and connected, in order to collect usage and performance data such that
