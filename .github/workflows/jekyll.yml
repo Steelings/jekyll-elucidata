@@ -35,6 +35,9 @@ jobs:
       - name: Install dependencies
         run: |
           bundle install
+      - name: Clean up previous build
+        run: |
+          rm -rf _site
       - name: Build with Jekyll
         run: |
           bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
@@ -45,13 +48,13 @@ jobs:
           find _site -type l
       - name: Remove symlinks
         run: |
-           find _site -type l -exec rm -f {} \;
+          find _site -type l -exec rm -f {} \;
       - name: Check site directory size
         run: |
           du -sh _site
-      - name: Clean up previous build
+      - name: List large files
         run: |
-          rm -rf _site
+          find _site -type f -size +100M -exec ls -lh {} \;
       - name: Upload artifact
         uses: actions/upload-artifact@v2
         with:
