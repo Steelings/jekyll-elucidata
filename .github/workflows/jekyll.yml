@@ -43,9 +43,15 @@ jobs:
       - name: Check for symlinks
         run: |
           find _site -type l
+      - name: Remove symlinks
+        run: |
+           find _site -type l -exec rm -f {} \;
       - name: Check site directory size
         run: |
           du -sh _site
+      - name: Clean up previous build
+        run: |
+          rm -rf _site
       - name: Upload artifact
         uses: actions/upload-artifact@v2
         with:
