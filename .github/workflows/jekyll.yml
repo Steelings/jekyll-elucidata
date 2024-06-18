@@ -55,6 +55,9 @@ jobs:
       - name: List large files
         run: |
           find _site -type f -size +100M -exec ls -lh {} \;
+      - name: Fix file permissions
+        run: |
+          find _site -type f -exec chmod 755 {} \;
       - name: Upload artifact
         uses: actions/upload-artifact@v2
         with:
