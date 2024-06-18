@@ -6,12 +6,13 @@ excerpt: More and more assets are instrumented and connected, in order to collec
 
 ---
 
-## Introduction
-<br/>
-<p align="center"><iframe src="https://player.vimeo.com/video/612907452?h=1c07951c12&color=e700ef" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-<br/></p>
-<br/>
-### Description
+
+<p class="text-center">
+  <iframe src="https://player.vimeo.com/video/612907452?h=1c07951c12&color=e700ef" class="max-w-full mx-auto" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</p>
+
+## Description
+{: .text-3xl .font-bold .mb-4 .py-8}
 
 More and more assets are instrumented and connected, in order to collect usage and performance data such that
 they can be monitored (semi-)continuously. A large number of sensors can be installed which log data in high frequency, resulting in a large amount of data being collected. Typically, these large volumes of data are transferred to a central server, where they are further analysed. This is not always optimal however:
@@ -27,10 +28,12 @@ In such kind of situations, data compression can be applied in order to reduce t
 
 
 ### Business goal
+{: .text-2xl .font-bold .mb-4 .py-8}
 
 The business goal related to this Starter Kit is **intelligent data retention**. More specifically, we will present a technique called *Swinging Door Trending* [1] that considers the informativeness of the data in order to retain at high frequency the interesting data while reducing the frequency of the less interesting data, thereby optimally using the storage or communication means of the asset.  The level of informativeness of the data is typically linked to the application for which the data is used. In this Starter Kit, an **event detection algorithm** will be used to validate the effectiveness of the technique. An intelligent data retention technique should effectively **retain the most important data points** such that the results of the application, in this case event detection, will be the same or only slightly different at most.
 
 ### Application context
+{: .text-2xl .font-bold .mb-4 .py-8}
 
 - Professional vehicles, such as cranes, trucks or airplanes, operating in remote areas without high-speed communication means
 
@@ -41,10 +44,12 @@ The business goal related to this Starter Kit is **intelligent data retention**.
 - ...
 
 ### Starter Kit outline
+{: .text-2xl .font-bold .mb-4 .py-8}
 
 We will first describe the dataset that we will be using for this Starter Kit, which consists of accelerometer data containing six time series signals. Then, we conceptually explain the Swinging Door Trending technique, and apply this on the six signals separately. Afterwards, we apply the technique on the six signals at once, which makes sense since accelerometer signals are often correlated. We then evaluate the results of both compression approaches on a technical level by considering how much they manage to compress the original signals and what is the associated error. Finally, we validate the compression within a concrete application, i.e. event detection.
 
 ### Dataset
+{: .text-2xl .font-bold .mb-4 .py-8}
 
 The dataset used in this Starter Kit concerns over 100 drives of a vehicle that stores usage data while driving. The vehicle does not have a continuous communication means and thus cannot send the usage data to the centralized server continuously. Data can only be transferred when the vehicle reaches a location where a hotspot is installed to off-load the data. In this case, the hotspot is located at the entry of a parking spot, so the amount of time the vehicle is in range of the hostpot is limited, resulting in small amounts of data that can be off-loaded at once. The dataset consists of accelerometer data that is aggregated:
 the raw data is sampled at 200 Hz and two aggregations are calculated and retained each second,

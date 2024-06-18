@@ -60,9 +60,11 @@ layout: default
             </div>
             <hr class="h-0.5 my-8 bg-gray-500 border-0">
         
-            <p class="mb-4 font-semibold italic text-xl text-gray-700">Let us know what you think about this article. Submit a letter to the editor at
-            <a href="mailto:{{ page.author | replace: ' ', '' | downcase }}@elucidata.be">{{ page.author | replace: ' ', '' | downcase }}@elucidata.be</a>.</p>
-
+            <p class="mb-4 font-semibold italic text-xl text-gray-700">
+                Let us know what you think about this article. Submit a letter to the editor at
+                {% assign defaultEmail = 'elucidatalab@sirris.be' %}
+                <a href="mailto:{{ page.author | replace: ' ', '' | downcase | default: defaultEmail }}">{{ page.author | replace: ' ', '' | downcase | default: defaultEmail }}</a>.
+            </p>
             <hr class="h-0.5 my-8 bg-gray-500 border-0">
             <h2 class="mb-4 font-bold text-3xl text-gray-700">You Might Also Like …</h2>
             <ul class="list-disc pl-4 mb-8">
