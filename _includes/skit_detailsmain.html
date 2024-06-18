@@ -1,3 +1,8 @@
+---
+layout: default
+---
+
+
 <main class="mt-16 lg:px-30 xl:px-48">
     <section class="header-and-searchbar">
         <div class="flex flex-col items-center">
@@ -27,7 +32,7 @@
                         <h3 class="text-xl font-medium text-gray-500">By {% if post.author %}{{ post.author }}{% else %}eluciDATA{% endif %}</h3>
                     </header>
                     {% if post.image %}
-                        <div class="bg-cover bg-center text-white flex items-center justify-center h-64 mb-8" style="background-image: url('{{ skit.image }}');">
+                        <div class="bg-cover bg-center text-white flex items-center justify-center h-64 mb-8" style="background-image: url('{{ post.image }}');">
                             <span class="sr-only">Image of {{ post.title }}</span>
                         </div>
                     {% else %}
@@ -36,7 +41,7 @@
                         </div>
                     {% endif %}
                     <div class="content">
-                        {{ content | markdownify }}
+                        {{ content  }}
                     </div>
                     <div class="flex justify-center pb-16">
                         <a href="{{ post.notebook }}" class="mt-4 text-white bg-gradient-to-br from-purple-500 to-blue-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-3xl text-lg px-6 py-3">Get Started</a>
