@@ -23,7 +23,7 @@ email: berre.staelens@student.odisee.be
 description: >- # this means to ignore newlines until "baseurl:"
   Elucidata - AI Starter kits Experience. AI Starter Kits with complementary video tutorials, Interactive Experience, Bring Your Own Data workshops.
 
-url: "steelings.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://steelings.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: Elucidata
 github_username:  Elucidata
 
