@@ -32,7 +32,9 @@
                     {{ post.content }}
                 </div>
                 <div class="flex justify-center pb-16">
-                    <a href="{{ post.notebook }}" class="mt-4 text-white bg-gradient-to-br from-purple-500 to-blue-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-3xl text-lg px-6 py-3">Get Started</a>
+                    {% if post.notebook %}
+                        <a href="{{ post.notebook }}" class="mt-4 text-white bg-gradient-to-br from-purple-500 to-blue-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-3xl text-lg px-6 py-3">Access notebook</a>
+                    {% endif %}
                 </div>
             </article>
             {% endfor %}
